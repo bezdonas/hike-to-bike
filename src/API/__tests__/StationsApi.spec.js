@@ -15,10 +15,10 @@ describe('StationsApi', () => {
   describe('getClosestPoints function', () => {
     it('should return ids[] of closest ${quantity} points to passed coords', () => {
       const parsedPoints = cloneDeep(ParsedPoints);
-      expect(getClosestPoints([-75.16374, 39.95378], parsedPoints, 1)).toEqual([
+      expect(getClosestPoints([39.95378, -75.16374], parsedPoints, 1)).toEqual([
         3004,
       ]);
-      expect(getClosestPoints([-75.15993, 39.94517], parsedPoints, 3)).toEqual([
+      expect(getClosestPoints([39.94517, -75.15993], parsedPoints, 3)).toEqual([
         3007,
         3101,
         3052,
