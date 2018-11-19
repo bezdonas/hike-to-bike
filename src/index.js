@@ -1,1 +1,3 @@
-console.log('Hello, webpack!');
+import giveFruit from './giveFruit';
+
+export default giveFruit;
