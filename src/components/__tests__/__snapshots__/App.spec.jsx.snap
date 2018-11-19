@@ -4,6 +4,9 @@ exports[`App smoke renders and matches snapshot 1`] = `
 <div
   id="app"
 >
-  Hello, preact!
+  <div
+    class="stations-map"
+    id="stations-map"
+  />
 </div>
 `;

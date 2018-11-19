@@ -1,4 +1,5 @@
-import Leaflet from 'leaflet';
+import Leaflet, { latLng } from 'leaflet';
+import './leaflet.css';
 
 export const initMap = (className, coords, zoom) => {
   const mapInstance = Leaflet.map(className).setView(coords, zoom);
@@ -9,4 +10,10 @@ export const initMap = (className, coords, zoom) => {
   }).addTo(mapInstance);
 
   return mapInstance;
+};
+
+export const addMarkerToMap = (mapInstance, latLng, markerOptions) => {
+  const marker = Leaflet.marker(latLng, markerOptions);
+  marker.addTo(mapInstance);
+  return marker;
 };
