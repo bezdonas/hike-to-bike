@@ -14,7 +14,7 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 
 - `npm start` starts dev-server
 - `npm test` runs test via jest in watch mode
-- `npm test:ci` runs test via jest once
+- `npm run test:ci` runs test via jest once
 - `npm run build` builds production bundle in `./build`
 
 ## Via docker
@@ -24,6 +24,12 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 - `npm run dbuild` builds production bundle in `./build` (`docker-compose run hike-to-bike npm run build`)
 - `npm run dcleanup` cleans up all docker stuff (`docker-compose down --rmi all -v`)
 
+# CI/CD
+
+- Travis runs build and test in docker-container
+- Then compiled build-folder is moved to heroku
+- Heroku deploys static build
+
 # Technologies
 
 - [webpack](https://webpack.js.org/)
@@ -32,3 +38,4 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 - [babel](https://babeljs.io/)
 - [eslint](https://eslint.org)
 - [docker](https://www.docker.com/)
+- [preact](https://preactjs.com/)
