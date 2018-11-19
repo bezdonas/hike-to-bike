@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  hike-to-bike:
+    container_name: hike-to-bike
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '8080:8080'
+    environment:
+      - NODE_ENV=development
+    command: npm start

@@ -6,8 +6,13 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "start": "webpack-dev-server --config webpack/development.config.js",
-    "build": "webpack --config webpack/prod.config.js"
+    "test:ci": "cross-env CI=true jest",
+    "start": "webpack-dev-server --config webpack/development.config.js --host 0.0.0.0",
+    "build": "webpack --config webpack/prod.config.js",
+    "dstart": "docker-compose up",
+    "dtest": "docker-compose run hike-to-bike npm test",
+    "dbuild": "docker-compose run hike-to-bike npm run build",
+    "dcleanup": "docker-compose down --rmi all -v"
   },
   "repository": {
     "type": "git",
@@ -28,7 +33,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged",
-      "pre-push": "cross-env CI=true jest"
+      "pre-push": "npm run test:ci"
     }
   },
   "dependencies": {
