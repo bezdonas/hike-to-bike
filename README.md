@@ -17,3 +17,4 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 - [webpack](https://webpack.js.org/)
 - [prettier](https://prettier.io/)
 - [jest](https://jestjs.io/)
+- [babel](https://babeljs.io/)
