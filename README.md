@@ -3,7 +3,7 @@
 Simple app for finding closest [indego](https://www.rideindego.com/) bycicle station
 
 - TODO: Demo
-- [Task](https://www.rideindego.com/stations/)
+- [Task](https://docs.google.com/document/d/1z3zuNeS7Gt0CbS9HMXQC-ta7ICUi35JA0Bn6kCYCGwQ/edit)
 - [Indego API](https://www.rideindego.com/stations/json/)
 
 # Quick start
