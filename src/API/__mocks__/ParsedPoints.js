@@ -1,7 +1,7 @@
 const ParsedPoints = [
   {
     id: 3004,
-    coordinates: [-75.16374, 39.95378],
+    coordinates: [39.95378, -75.16374],
     name: '1401 John F. Kennedy Blvd.',
     address: '1401 John F. Kennedy Blvd.',
     bikes: 22,
@@ -14,7 +14,7 @@ const ParsedPoints = [
   },
   {
     id: 3005,
-    coordinates: [-75.14403, 39.94733],
+    coordinates: [39.94733, -75.14403],
     name: '191 S. 2nd St.',
     address: '191 S. 2nd St.',
     bikes: 11,
@@ -27,7 +27,7 @@ const ParsedPoints = [
   },
   {
     id: 3006,
-    coordinates: [-75.20311, 39.9522],
+    coordinates: [39.9522, -75.20311],
     name: '246 S. 40th St.',
     address: '246 S. 40th St.',
     bikes: 1,
@@ -40,7 +40,7 @@ const ParsedPoints = [
   },
   {
     id: 3007,
-    coordinates: [-75.15993, 39.94517],
+    coordinates: [39.94517, -75.15993],
     name: '328 S. 11th St.',
     address: '328 S. 11th St.',
     bikes: 13,
@@ -53,7 +53,7 @@ const ParsedPoints = [
   },
   {
     id: 3008,
-    coordinates: [-75.15055, 39.98078],
+    coordinates: [39.98078, -75.15055],
     name: '1076 Berks Street',
     address: '1076 Berks Street',
     bikes: 13,
@@ -66,7 +66,7 @@ const ParsedPoints = [
   },
   {
     id: 3009,
-    coordinates: [-75.18982, 39.95576],
+    coordinates: [39.95576, -75.18982],
     name: '3318 Market St.',
     address: '3318 Market St.',
     bikes: 11,
@@ -79,7 +79,7 @@ const ParsedPoints = [
   },
   {
     id: 3010,
-    coordinates: [-75.16618, 39.94711],
+    coordinates: [39.94711, -75.16618],
     name: '1483 Spruce St.',
     address: '1483 Spruce St.',
     bikes: 9,
@@ -92,7 +92,7 @@ const ParsedPoints = [
   },
   {
     id: 3011,
-    coordinates: [-75.1969, 39.95949],
+    coordinates: [39.95949, -75.1969],
     name: '3788 Powelton Avenue',
     address: '3788 Powelton Avenue',
     bikes: 4,
@@ -105,7 +105,7 @@ const ParsedPoints = [
   },
   {
     id: 3012,
-    coordinates: [-75.17747, 39.94218],
+    coordinates: [39.94218, -75.17747],
     name: '807 S. 21st St.',
     address: '807 S. 21st St.',
     bikes: 1,
@@ -118,7 +118,7 @@ const ParsedPoints = [
   },
   {
     id: 3013,
-    coordinates: [-75.14792, 39.96317],
+    coordinates: [39.96317, -75.14792],
     name: '674 N. 6th St.',
     address: '674 N. 6th St.',
     bikes: 11,
@@ -131,7 +131,7 @@ const ParsedPoints = [
   },
   {
     id: 3014,
-    coordinates: [-75.17369, 39.95886],
+    coordinates: [39.95886, -75.17369],
     name: '2090 Winter St.',
     address: '2090 Winter St.',
     bikes: 2,
@@ -144,7 +144,7 @@ const ParsedPoints = [
   },
   {
     id: 3015,
-    coordinates: [-75.14886, 39.94735],
+    coordinates: [39.94735, -75.14886],
     name: '422 Walnut St.',
     address: '422 Walnut St.',
     bikes: 2,
@@ -157,7 +157,7 @@ const ParsedPoints = [
   },
   {
     id: 3016,
-    coordinates: [-75.1547, 39.96892],
+    coordinates: [39.96892, -75.1547],
     name: '1100 Poplar St.',
     address: '1100 Poplar St.',
     bikes: 9,
@@ -170,7 +170,7 @@ const ParsedPoints = [
   },
   {
     id: 3017,
-    coordinates: [-75.14371, 39.98003],
+    coordinates: [39.98003, -75.14371],
     name: '527 W. Berks St.',
     address: '527 W. Berks St.',
     bikes: 6,
@@ -183,7 +183,7 @@ const ParsedPoints = [
   },
   {
     id: 3018,
-    coordinates: [-75.15979, 39.95273],
+    coordinates: [39.95273, -75.15979],
     name: '1200 Filbert St.',
     address: '1200 Filbert St.',
     bikes: 4,
@@ -196,7 +196,7 @@ const ParsedPoints = [
   },
   {
     id: 3019,
-    coordinates: [-75.14983, 39.95403],
+    coordinates: [39.95403, -75.14983],
     name: '160 N. 6th St.',
     address: '160 N. 6th St.',
     bikes: 0,
@@ -209,7 +209,7 @@ const ParsedPoints = [
   },
   {
     id: 3020,
-    coordinates: [-75.19036, 39.94922],
+    coordinates: [39.94922, -75.19036],
     name: '3051 South St.',
     address: '3051 South St.',
     bikes: 25,
@@ -222,7 +222,7 @@ const ParsedPoints = [
   },
   {
     id: 3021,
-    coordinates: [-75.16902, 39.9539],
+    coordinates: [39.9539, -75.16902],
     name: '1750 John F. Kennedy Blvd.',
     address: '1750 John F. Kennedy Blvd.',
     bikes: 12,
@@ -235,7 +235,7 @@ const ParsedPoints = [
   },
   {
     id: 3022,
-    coordinates: [-75.18323, 39.95472],
+    coordinates: [39.95472, -75.18323],
     name: '2933 Market Street',
     address: '2933 Market Street',
     bikes: 10,
@@ -248,7 +248,7 @@ const ParsedPoints = [
   },
   {
     id: 3024,
-    coordinates: [-75.20908, 39.94822],
+    coordinates: [39.94822, -75.20908],
     name: '598 S. 43rd St.',
     address: '598 S. 43rd St.',
     bikes: 12,
@@ -261,7 +261,7 @@ const ParsedPoints = [
   },
   {
     id: 3025,
-    coordinates: [-75.1612, 39.93724],
+    coordinates: [39.93724, -75.1612],
     name: '1084 Washington Ave.',
     address: '1084 Washington Ave.',
     bikes: 6,
@@ -274,7 +274,7 @@ const ParsedPoints = [
   },
   {
     id: 3026,
-    coordinates: [-75.14564, 39.94138],
+    coordinates: [39.94138, -75.14564],
     name: '523 S. 2nd St.',
     address: '523 S. 2nd St.',
     bikes: 6,
@@ -287,7 +287,7 @@ const ParsedPoints = [
   },
   {
     id: 3027,
-    coordinates: [-75.20069, 39.95694],
+    coordinates: [39.95694, -75.20069],
     name: '3984 Market St.',
     address: '3984 Market St.',
     bikes: 9,
@@ -300,7 +300,7 @@ const ParsedPoints = [
   },
   {
     id: 3028,
-    coordinates: [-75.14958, 39.94061],
+    coordinates: [39.94061, -75.14958],
     name: '404 Bainbridge St.',
     address: '404 Bainbridge St.',
     bikes: 10,
@@ -313,7 +313,7 @@ const ParsedPoints = [
   },
   {
     id: 3029,
-    coordinates: [-75.19479, 39.9538],
+    coordinates: [39.9538, -75.19479],
     name: '125 S. 36th St.',
     address: '125 S. 36th St.',
     bikes: 14,
@@ -326,7 +326,7 @@ const ParsedPoints = [
   },
   {
     id: 3030,
-    coordinates: [-75.15716, 39.93935],
+    coordinates: [39.93935, -75.15716],
     name: '840 S. Darien St.',
     address: '840 S. Darien St.',
     bikes: 11,
@@ -339,7 +339,7 @@ const ParsedPoints = [
   },
   {
     id: 3031,
-    coordinates: [-75.15522, 39.98005],
+    coordinates: [39.98005, -75.15522],
     name: '1284 W. Montgomery Ave.',
     address: '1284 W. Montgomery Ave.',
     bikes: 2,
@@ -352,7 +352,7 @@ const ParsedPoints = [
   },
   {
     id: 3032,
-    coordinates: [-75.17971, 39.94527],
+    coordinates: [39.94527, -75.17971],
     name: '671 S. 23rd St.',
     address: '671 S. 23rd St.',
     bikes: 8,
@@ -365,7 +365,7 @@ const ParsedPoints = [
   },
   {
     id: 3033,
-    coordinates: [-75.15672, 39.95005],
+    coordinates: [39.95005, -75.15672],
     name: '921 Chestnut St.',
     address: '921 Chestnut St.',
     bikes: 17,
@@ -378,7 +378,7 @@ const ParsedPoints = [
   },
   {
     id: 3034,
-    coordinates: [-75.16248, 39.93315],
+    coordinates: [39.93315, -75.16248],
     name: '1116 Reed St.',
     address: '1116 Reed St.',
     bikes: 16,
@@ -391,7 +391,7 @@ const ParsedPoints = [
   },
   {
     id: 3035,
-    coordinates: [-75.19419, 39.96271],
+    coordinates: [39.96271, -75.19419],
     name: '3599 Spring Garden',
     address: '3599 Spring Garden',
     bikes: 1,
@@ -404,7 +404,7 @@ const ParsedPoints = [
   },
   {
     id: 3036,
-    coordinates: [-75.14001, 39.96844],
+    coordinates: [39.96844, -75.14001],
     name: '1104 Germantown Ave.',
     address: '1104 Germantown Ave.',
     bikes: 11,
@@ -417,7 +417,7 @@ const ParsedPoints = [
   },
   {
     id: 3037,
-    coordinates: [-75.16138, 39.95424],
+    coordinates: [39.95424, -75.16138],
     name: '1321 Arch St.',
     address: '1321 Arch St.',
     bikes: 9,
@@ -430,7 +430,7 @@ const ParsedPoints = [
   },
   {
     id: 3038,
-    coordinates: [-75.19409, 39.94781],
+    coordinates: [39.94781, -75.19409],
     name: '3499 Civic Center Blvd.',
     address: '3499 Civic Center Blvd.',
     bikes: 9,
@@ -443,7 +443,7 @@ const ParsedPoints = [
   },
   {
     id: 3039,
-    coordinates: [-75.1597, 39.97121],
+    coordinates: [39.97121, -75.1597],
     name: '922 N. Broad St.',
     address: '922 N. Broad St.',
     bikes: 3,
@@ -456,7 +456,7 @@ const ParsedPoints = [
   },
   {
     id: 3040,
-    coordinates: [-75.16606, 39.96289],
+    coordinates: [39.96289, -75.16606],
     name: '1684 Spring Garden St.',
     address: '1684 Spring Garden St.',
     bikes: 6,
@@ -469,7 +469,7 @@ const ParsedPoints = [
   },
   {
     id: 3041,
-    coordinates: [-75.13546, 39.96849],
+    coordinates: [39.96849, -75.13546],
     name: '1176 Leopard Ave.',
     address: '1176 Leopard Ave.',
     bikes: 15,
@@ -482,7 +482,7 @@ const ParsedPoints = [
   },
   {
     id: 3043,
-    coordinates: [-75.17474, 39.93082],
+    coordinates: [39.93082, -75.17474],
     name: '1625 S. 18th St.',
     address: '1625 S. 18th St.',
     bikes: 11,
@@ -495,7 +495,7 @@ const ParsedPoints = [
   },
   {
     id: 3045,
-    coordinates: [-75.16237, 39.94792],
+    coordinates: [39.94792, -75.16237],
     name: '213 S. 13th St.',
     address: '213 S. 13th St.',
     bikes: 0,
@@ -508,7 +508,7 @@ const ParsedPoints = [
   },
   {
     id: 3046,
-    coordinates: [-75.14472, 39.95012],
+    coordinates: [39.95012, -75.14472],
     name: '215 Market St.',
     address: '215 Market St.',
     bikes: 11,
@@ -521,7 +521,7 @@ const ParsedPoints = [
   },
   {
     id: 3047,
-    coordinates: [-75.14921, 39.95071],
+    coordinates: [39.95071, -75.14921],
     name: '519 Market St.',
     address: '519 Market St.',
     bikes: 1,
@@ -534,7 +534,7 @@ const ParsedPoints = [
   },
   {
     id: 3049,
-    coordinates: [-75.1425, 39.94509],
+    coordinates: [39.94509, -75.1425],
     name: '3 Dock St.',
     address: '3 Dock St.',
     bikes: 5,
@@ -547,7 +547,7 @@ const ParsedPoints = [
   },
   {
     id: 3050,
-    coordinates: [-75.15426, 39.95339],
+    coordinates: [39.95339, -75.15426],
     name: '813 Arch St.',
     address: '813 Arch St.',
     bikes: 3,
@@ -560,7 +560,7 @@ const ParsedPoints = [
   },
   {
     id: 3051,
-    coordinates: [-75.17507, 39.96744],
+    coordinates: [39.96744, -75.17507],
     name: '2237 Fairmount Ave.',
     address: '2237 Fairmount Ave.',
     bikes: 8,
@@ -573,7 +573,7 @@ const ParsedPoints = [
   },
   {
     id: 3052,
-    coordinates: [-75.15695, 39.94732],
+    coordinates: [39.94732, -75.15695],
     name: '923 Locust St.',
     address: '923 Locust St.',
     bikes: 15,
@@ -586,7 +586,7 @@ const ParsedPoints = [
   },
   {
     id: 3053,
-    coordinates: [-75.18154, 39.93231],
+    coordinates: [39.93231, -75.18154],
     name: '1575 Point Breeze Ave.',
     address: '1575 Point Breeze Ave.',
     bikes: 9,
@@ -599,7 +599,7 @@ const ParsedPoints = [
   },
   {
     id: 3054,
-    coordinates: [-75.1742, 39.9625],
+    coordinates: [39.9625, -75.1742],
     name: '2170 Hamilton St.',
     address: '2170 Hamilton St.',
     bikes: 10,
@@ -612,7 +612,7 @@ const ParsedPoints = [
   },
   {
     id: 3055,
-    coordinates: [-75.15457, 39.95112],
+    coordinates: [39.95112, -75.15457],
     name: '834 Market St.',
     address: '834 Market St.',
     bikes: 2,
@@ -625,7 +625,7 @@ const ParsedPoints = [
   },
   {
     id: 3056,
-    coordinates: [-75.15813, 39.97669],
+    coordinates: [39.97669, -75.15813],
     name: '1501 N. Broad St.',
     address: '1501 N. Broad St.',
     bikes: 13,
@@ -638,7 +638,7 @@ const ParsedPoints = [
   },
   {
     id: 3057,
-    coordinates: [-75.17995, 39.96444],
+    coordinates: [39.96444, -75.17995],
     name: 'Schuylkill River Trail',
     address: 'Schuylkill River Trail',
     bikes: 14,
@@ -651,7 +651,7 @@ const ParsedPoints = [
   },
   {
     id: 3058,
-    coordinates: [-75.17001, 39.96716],
+    coordinates: [39.96716, -75.17001],
     name: '1940 Fairmount Ave.',
     address: '1940 Fairmount Ave.',
     bikes: 3,
@@ -664,7 +664,7 @@ const ParsedPoints = [
   },
   {
     id: 3059,
-    coordinates: [-75.16174, 39.96265],
+    coordinates: [39.96265, -75.16174],
     name: '1415 Spring Garden St.',
     address: '1415 Spring Garden St.',
     bikes: 11,
@@ -677,7 +677,7 @@ const ParsedPoints = [
   },
   {
     id: 3060,
-    coordinates: [-75.17036, 39.95923],
+    coordinates: [39.95923, -75.17036],
     name: '302 N. 19th St.',
     address: '302 N. 19th St.',
     bikes: 12,
@@ -690,7 +690,7 @@ const ParsedPoints = [
   },
   {
     id: 3061,
-    coordinates: [-75.17761, 39.95425],
+    coordinates: [39.95425, -75.17761],
     name: '2241 Market St.',
     address: '2241 Market St.',
     bikes: 7,
@@ -703,7 +703,7 @@ const ParsedPoints = [
   },
   {
     id: 3062,
-    coordinates: [-75.17943, 39.95197],
+    coordinates: [39.95197, -75.17943],
     name: '120 S. 24th St.',
     address: '120 S. 24th St.',
     bikes: 9,
@@ -716,7 +716,7 @@ const ParsedPoints = [
   },
   {
     id: 3063,
-    coordinates: [-75.1698, 39.94633],
+    coordinates: [39.94633, -75.1698],
     name: '391  S. 17th St.',
     address: '391  S. 17th St.',
     bikes: 14,
@@ -729,7 +729,7 @@ const ParsedPoints = [
   },
   {
     id: 3064,
-    coordinates: [-75.17327, 39.9384],
+    coordinates: [39.9384, -75.17327],
     name: '1800 Washington Ave.',
     address: '1800 Washington Ave.',
     bikes: 12,
@@ -742,7 +742,7 @@ const ParsedPoints = [
   },
   {
     id: 3065,
-    coordinates: [-75.15171, 39.9707],
+    coordinates: [39.9707, -75.15171],
     name: '915 W. Girard Ave.',
     address: '915 W. Girard Ave.',
     bikes: 6,
@@ -755,7 +755,7 @@ const ParsedPoints = [
   },
   {
     id: 3066,
-    coordinates: [-75.17348, 39.94561],
+    coordinates: [39.94561, -75.17348],
     name: '1910 Lombard St.',
     address: '1910 Lombard St.',
     bikes: 13,
@@ -768,7 +768,7 @@ const ParsedPoints = [
   },
   {
     id: 3067,
-    coordinates: [-75.19973, 39.96411],
+    coordinates: [39.96411, -75.19973],
     name: '631 N. 39th St.',
     address: '631 N. 39th St.',
     bikes: 12,
@@ -781,7 +781,7 @@ const ParsedPoints = [
   },
   {
     id: 3068,
-    coordinates: [-75.16711, 39.93549],
+    coordinates: [39.93549, -75.16711],
     name: '1201 S. Broad St.',
     address: '1201 S. Broad St.',
     bikes: 10,
@@ -794,7 +794,7 @@ const ParsedPoints = [
   },
   {
     id: 3069,
-    coordinates: [-75.15038, 39.93704],
+    coordinates: [39.93704, -75.15038],
     name: '403 Christian St.',
     address: '403 Christian St.',
     bikes: 13,
@@ -807,7 +807,7 @@ const ParsedPoints = [
   },
   {
     id: 3070,
-    coordinates: [-75.13983, 39.96062],
+    coordinates: [39.96062, -75.13983],
     name: '117 Spring Garden St.',
     address: '117 Spring Garden St.',
     bikes: 9,
@@ -820,7 +820,7 @@ const ParsedPoints = [
   },
   {
     id: 3071,
-    coordinates: [-75.18788, 39.96173],
+    coordinates: [39.96173, -75.18788],
     name: '3170 Baring St.',
     address: '3170 Baring St.',
     bikes: 5,
@@ -833,7 +833,7 @@ const ParsedPoints = [
   },
   {
     id: 3072,
-    coordinates: [-75.14541, 39.93445],
+    coordinates: [39.93445, -75.14541],
     name: '925 S. Front St.',
     address: '925 S. Front St.',
     bikes: 8,
@@ -846,7 +846,7 @@ const ParsedPoints = [
   },
   {
     id: 3073,
-    coordinates: [-75.15242, 39.96143],
+    coordinates: [39.96143, -75.15242],
     name: '802 Spring Garden St.',
     address: '802 Spring Garden St.',
     bikes: 11,
@@ -859,7 +859,7 @@ const ParsedPoints = [
   },
   {
     id: 3074,
-    coordinates: [-75.20987, 39.95511],
+    coordinates: [39.95511, -75.20987],
     name: '160 S. 44th St.',
     address: '160 S. 44th St.',
     bikes: 3,
@@ -872,7 +872,7 @@ const ParsedPoints = [
   },
   {
     id: 3075,
-    coordinates: [-75.16125, 39.96718],
+    coordinates: [39.96718, -75.16125],
     name: '1413 Fairmount Ave.',
     address: '1413 Fairmount Ave.',
     bikes: 3,
@@ -885,7 +885,7 @@ const ParsedPoints = [
   },
   {
     id: 3077,
-    coordinates: [-75.16351, 39.97207],
+    coordinates: [39.97207, -75.16351],
     name: '1617 Girard Ave.',
     address: '1617 Girard Ave.',
     bikes: 7,
@@ -898,7 +898,7 @@ const ParsedPoints = [
   },
   {
     id: 3078,
-    coordinates: [-75.17192, 39.95355],
+    coordinates: [39.95355, -75.17192],
     name: '1901 Market St.',
     address: '1901 Market St.',
     bikes: 8,
@@ -911,7 +911,7 @@ const ParsedPoints = [
   },
   {
     id: 3086,
-    coordinates: [-75.16691, 39.94019],
+    coordinates: [39.94019, -75.16691],
     name: '1406 Christian Street',
     address: '1406 Christian Street',
     bikes: 18,
@@ -924,7 +924,7 @@ const ParsedPoints = [
   },
   {
     id: 3088,
-    coordinates: [-75.1418, 39.96984],
+    coordinates: [39.96984, -75.1418],
     name: '317 W. Girard Ave. ',
     address: '317 W. Girard Ave. ',
     bikes: 16,
@@ -937,7 +937,7 @@ const ParsedPoints = [
   },
   {
     id: 3093,
-    coordinates: [-75.18701, 39.98837],
+    coordinates: [39.98837, -75.18701],
     name: '2039 N. 33rd Street',
     address: '2039 N. 33rd Street',
     bikes: 2,
@@ -950,7 +950,7 @@ const ParsedPoints = [
   },
   {
     id: 3095,
-    coordinates: [-75.18052, 39.98771],
+    coordinates: [39.98771, -75.18052],
     name: '2039 N. 29th Street',
     address: '2039 N. 29th Street',
     bikes: 4,
@@ -963,7 +963,7 @@ const ParsedPoints = [
   },
   {
     id: 3096,
-    coordinates: [-75.17975, 39.99119],
+    coordinates: [39.99119, -75.17975],
     name: '2301 N. 29th Street',
     address: '2301 N. 29th Street',
     bikes: 1,
@@ -976,7 +976,7 @@ const ParsedPoints = [
   },
   {
     id: 3097,
-    coordinates: [-75.13339, 39.97888],
+    coordinates: [39.97888, -75.13339],
     name: '1902 N. Front Street',
     address: '1902 N. Front Street',
     bikes: 13,
@@ -989,7 +989,7 @@ const ParsedPoints = [
   },
   {
     id: 3098,
-    coordinates: [-75.16042, 39.93431],
+    coordinates: [39.93431, -75.16042],
     name: '1201 S. 10th Street',
     address: '1201 S. 10th Street',
     bikes: 7,
@@ -1002,7 +1002,7 @@ const ParsedPoints = [
   },
   {
     id: 3099,
-    coordinates: [-75.15094, 39.93401],
+    coordinates: [39.93401, -75.15094],
     name: '1110 S. 4th Street',
     address: '1110 S. 4th Street',
     bikes: 13,
@@ -1015,7 +1015,7 @@ const ParsedPoints = [
   },
   {
     id: 3100,
-    coordinates: [-75.15103, 39.92777],
+    coordinates: [39.92777, -75.15103],
     name: '1600 E. Moyamensing',
     address: '1600 E. Moyamensing',
     bikes: 19,
@@ -1028,7 +1028,7 @@ const ParsedPoints = [
   },
   {
     id: 3101,
-    coordinates: [-75.15955, 39.94295],
+    coordinates: [39.94295, -75.15955],
     name: '1015 South Street',
     address: '1015 South Street',
     bikes: 11,
@@ -1041,7 +1041,7 @@ const ParsedPoints = [
   },
   {
     id: 3102,
-    coordinates: [-75.17952, 39.96759],
+    coordinates: [39.96759, -75.17952],
     name: '2601 Pennsylvania Avenue',
     address: '2601 Pennsylvania Avenue',
     bikes: 24,
@@ -1054,7 +1054,7 @@ const ParsedPoints = [
   },
   {
     id: 3103,
-    coordinates: [-75.1794, 39.97714],
+    coordinates: [39.97714, -75.1794],
     name: '2651 Master Street',
     address: '2651 Master Street',
     bikes: 5,
@@ -1067,7 +1067,7 @@ const ParsedPoints = [
   },
   {
     id: 3104,
-    coordinates: [-75.19209, 39.96664],
+    coordinates: [39.96664, -75.19209],
     name: '712 N. 34th Street',
     address: '712 N. 34th Street',
     bikes: 2,
@@ -1080,7 +1080,7 @@ const ParsedPoints = [
   },
   {
     id: 3105,
-    coordinates: [-75.14111, 39.96207],
+    coordinates: [39.96207, -75.14111],
     name: '703 N 2nd St.',
     address: '703 N 2nd St.',
     bikes: 16,
@@ -1093,7 +1093,7 @@ const ParsedPoints = [
   },
   {
     id: 3106,
-    coordinates: [-75.18637, 39.99179],
+    coordinates: [39.99179, -75.18637],
     name: '2300 N. 33rd Street',
     address: '2300 N. 33rd Street',
     bikes: 2,
@@ -1106,7 +1106,7 @@ const ParsedPoints = [
   },
   {
     id: 3107,
-    coordinates: [-75.18866, 39.98203],
+    coordinates: [39.98203, -75.18866],
     name: '1626 N. 33rd Street',
     address: '1626 N. 33rd Street',
     bikes: 3,
@@ -1119,7 +1119,7 @@ const ParsedPoints = [
   },
   {
     id: 3108,
-    coordinates: [-75.16551, 39.95316],
+    coordinates: [39.95316, -75.16551],
     name: '1515 Market Street',
     address: '1515 Market Street',
     bikes: 12,
@@ -1132,7 +1132,7 @@ const ParsedPoints = [
   },
   {
     id: 3110,
-    coordinates: [-75.13641, 39.96175],
+    coordinates: [39.96175, -75.13641],
     name: '779 Delaware Ave',
     address: '779 Delaware Ave',
     bikes: 15,
@@ -1145,7 +1145,7 @@ const ParsedPoints = [
   },
   {
     id: 3111,
-    coordinates: [-75.21323, 39.97779],
+    coordinates: [39.97779, -75.21323],
     name: '4601 Parkside Ave',
     address: '4601 Parkside Ave',
     bikes: 7,
@@ -1158,7 +1158,7 @@ const ParsedPoints = [
   },
   {
     id: 3112,
-    coordinates: [-75.21825, 39.95373],
+    coordinates: [39.95373, -75.21825],
     name: '310 S. 48th Street',
     address: '310 S. 48th Street',
     bikes: 0,
@@ -1171,7 +1171,7 @@ const ParsedPoints = [
   },
   {
     id: 3113,
-    coordinates: [-75.19781, 39.97472],
+    coordinates: [39.97472, -75.19781],
     name: '1046 N. 34th Street',
     address: '1046 N. 34th Street',
     bikes: 3,
@@ -1184,7 +1184,7 @@ const ParsedPoints = [
   },
   {
     id: 3114,
-    coordinates: [-75.18012, 39.93775],
+    coordinates: [39.93775, -75.18012],
     name: '22nd & Federal St.',
     address: '22nd & Federal St.',
     bikes: 0,
@@ -1197,7 +1197,7 @@ const ParsedPoints = [
   },
   {
     id: 3115,
-    coordinates: [-75.16757, 39.97263],
+    coordinates: [39.97263, -75.16757],
     name: '1901 W. Girard St..',
     address: '1901 W. Girard St..',
     bikes: 4,
@@ -1210,7 +1210,7 @@ const ParsedPoints = [
   },
   {
     id: 3116,
-    coordinates: [-75.17198, 39.96006],
+    coordinates: [39.96006, -75.17198],
     name: '2025 Benjamin Franklin Pkwy',
     address: '2025 Benjamin Franklin Pkwy',
     bikes: 8,
@@ -1223,7 +1223,7 @@ const ParsedPoints = [
   },
   {
     id: 3117,
-    coordinates: [-75.22399, 39.97841],
+    coordinates: [39.97841, -75.22399],
     name: '1575 N 52nd St.',
     address: '1575 N 52nd St.',
     bikes: 6,
@@ -1236,7 +1236,7 @@ const ParsedPoints = [
   },
   {
     id: 3118,
-    coordinates: [-75.21323, 39.95866],
+    coordinates: [39.95866, -75.21323],
     name: '4628 Market Street',
     address: '4628 Market Street',
     bikes: 13,
@@ -1249,7 +1249,7 @@ const ParsedPoints = [
   },
   {
     id: 3119,
-    coordinates: [-75.20799, 39.96674],
+    coordinates: [39.96674, -75.20799],
     name: '4209 Lancaster Avenue',
     address: '4209 Lancaster Avenue',
     bikes: 10,
@@ -1262,7 +1262,7 @@ const ParsedPoints = [
   },
   {
     id: 3120,
-    coordinates: [-75.18669, 39.97522],
+    coordinates: [39.97522, -75.18669],
     name: '1210 N. 31st Street',
     address: '1210 N. 31st Street',
     bikes: 16,
@@ -1275,7 +1275,7 @@ const ParsedPoints = [
   },
   {
     id: 3121,
-    coordinates: [-75.18022, 39.97414],
+    coordinates: [39.97414, -75.18022],
     name: '2698 W Girard',
     address: '2698 W Girard',
     bikes: 3,
@@ -1288,7 +1288,7 @@ const ParsedPoints = [
   },
   {
     id: 3123,
-    coordinates: [-75.17088, 39.98004],
+    coordinates: [39.98004, -75.17088],
     name: '1637 N. 22nd Street',
     address: '1637 N. 22nd Street',
     bikes: 9,
@@ -1301,7 +1301,7 @@ const ParsedPoints = [
   },
   {
     id: 3124,
-    coordinates: [-75.13979, 39.95295],
+    coordinates: [39.95295, -75.13979],
     name: '190 N Christopher Columbus Blvd (approx.)',
     address: '190 N Christopher Columbus Blvd (approx.)',
     bikes: 13,
@@ -1314,7 +1314,7 @@ const ParsedPoints = [
   },
   {
     id: 3125,
-    coordinates: [-75.16735, 39.94391],
+    coordinates: [39.94391, -75.16735],
     name: '1505 South St. ',
     address: '1505 South St. ',
     bikes: 17,
@@ -1327,7 +1327,7 @@ const ParsedPoints = [
   },
   {
     id: 3129,
-    coordinates: [-75.19311, 39.94681],
+    coordinates: [39.94681, -75.19311],
     name: 'East Service Drive',
     address: 'East Service Drive',
     bikes: 1,
@@ -1340,7 +1340,7 @@ const ParsedPoints = [
   },
   {
     id: 3150,
-    coordinates: [-75.17021, 39.92884],
+    coordinates: [39.92884, -75.17021],
     name: '1487 Castle Street',
     address: '1487 Castle Street',
     bikes: 15,
@@ -1353,7 +1353,7 @@ const ParsedPoints = [
   },
   {
     id: 3152,
-    coordinates: [-75.20286, 39.94993],
+    coordinates: [39.94993, -75.20286],
     name: '3960 Baltimore Ave,',
     address: '3960 Baltimore Ave,',
     bikes: 13,
@@ -1366,7 +1366,7 @@ const ParsedPoints = [
   },
   {
     id: 3153,
-    coordinates: [-75.12994, 39.97216],
+    coordinates: [39.97216, -75.12994],
     name: '448 East Thompson Street',
     address: '448 East Thompson Street',
     bikes: 7,
@@ -1379,7 +1379,7 @@ const ParsedPoints = [
   },
   {
     id: 3154,
-    coordinates: [-75.15821, 39.95924],
+    coordinates: [39.95924, -75.15821],
     name: '403 N. 12th Street',
     address: '403 N. 12th Street',
     bikes: 12,
@@ -1392,7 +1392,7 @@ const ParsedPoints = [
   },
   {
     id: 3155,
-    coordinates: [-75.15442, 39.94018],
+    coordinates: [39.94018, -75.15442],
     name: '736 S. 7th St.',
     address: '736 S. 7th St.',
     bikes: 10,
@@ -1405,7 +1405,7 @@ const ParsedPoints = [
   },
   {
     id: 3156,
-    coordinates: [-75.17407, 39.95381],
+    coordinates: [39.95381, -75.17407],
     name: '2005 market street',
     address: '2005 market street',
     bikes: 17,
@@ -1418,7 +1418,7 @@ const ParsedPoints = [
   },
   {
     id: 3157,
-    coordinates: [-75.15954, 39.92545],
+    coordinates: [39.92545, -75.15954],
     name: '808 Mifflin St.',
     address: '808 Mifflin St.',
     bikes: 15,
@@ -1431,7 +1431,7 @@ const ParsedPoints = [
   },
   {
     id: 3158,
-    coordinates: [-75.16904, 39.92552],
+    coordinates: [39.92552, -75.16904],
     name: '1384 McKean Street',
     address: '1384 McKean Street',
     bikes: 12,
@@ -1444,7 +1444,7 @@ const ParsedPoints = [
   },
   {
     id: 3159,
-    coordinates: [-75.19962, 39.95121],
+    coordinates: [39.95121, -75.19962],
     name: '3804 spruce street',
     address: '3804 spruce street',
     bikes: 0,
@@ -1457,7 +1457,7 @@ const ParsedPoints = [
   },
   {
     id: 3160,
-    coordinates: [-75.19862, 39.95662],
+    coordinates: [39.95662, -75.19862],
     name: '3810 Market St.',
     address: '3810 Market St.',
     bikes: 6,
@@ -1470,7 +1470,7 @@ const ParsedPoints = [
   },
   {
     id: 3161,
-    coordinates: [-75.18091, 39.95486],
+    coordinates: [39.95486, -75.18091],
     name: 'Market & Schuylkill Ave',
     address: 'Market & Schuylkill Ave',
     bikes: 12,
@@ -1483,7 +1483,7 @@ const ParsedPoints = [
   },
   {
     id: 3162,
-    coordinates: [-75.18475, 39.94595],
+    coordinates: [39.94595, -75.18475],
     name: '630 Schuylkill Ave',
     address: '630 Schuylkill Ave',
     bikes: 24,
@@ -1496,7 +1496,7 @@ const ParsedPoints = [
   },
   {
     id: 3163,
-    coordinates: [-75.18097, 39.94974],
+    coordinates: [39.94974, -75.18097],
     name: '229 S. 25th Street ',
     address: '229 S. 25th Street ',
     bikes: 13,
@@ -1509,7 +1509,7 @@ const ParsedPoints = [
   },
   {
     id: 3164,
-    coordinates: [-75.16515, 39.92814],
+    coordinates: [39.92814, -75.16515],
     name: '1724 S. 12th St',
     address: '1724 S. 12th St',
     bikes: 15,
@@ -1522,7 +1522,7 @@ const ParsedPoints = [
   },
   {
     id: 3165,
-    coordinates: [-75.1782, 39.95819],
+    coordinates: [39.95819, -75.1782],
     name: '2317 Race St',
     address: '2317 Race St',
     bikes: 15,
@@ -1535,7 +1535,7 @@ const ParsedPoints = [
   },
   {
     id: 3166,
-    coordinates: [-75.13445, 39.97235],
+    coordinates: [39.97235, -75.13445],
     name: '1424 Frankford Ave',
     address: '1424 Frankford Ave',
     bikes: 6,
@@ -1548,7 +1548,7 @@ const ParsedPoints = [
   },
   {
     id: 3167,
-    coordinates: [-75.16028, 39.95025],
+    coordinates: [39.95025, -75.16028],
     name: '118 S. 12th St.',
     address: '118 S. 12th St.',
     bikes: 10,
@@ -1561,7 +1561,7 @@ const ParsedPoints = [
   },
   {
     id: 3168,
-    coordinates: [-75.17394, 39.95134],
+    coordinates: [39.95134, -75.17394],
     name: '129 S. 20th St.',
     address: '129 S. 20th St.',
     bikes: 14,
@@ -1574,7 +1574,7 @@ const ParsedPoints = [
   },
   {
     id: 3169,
-    coordinates: [-75.14263, 39.95382],
+    coordinates: [39.95382, -75.14263],
     name: '151 Race St',
     address: '151 Race St',
     bikes: 8,
@@ -1587,7 +1587,7 @@ const ParsedPoints = [
   },
   {
     id: 3170,
-    coordinates: [-75.18134, 39.94426],
+    coordinates: [39.94426, -75.18134],
     name: '2332 Grays Ferry Ave',
     address: '2332 Grays Ferry Ave',
     bikes: 2,
@@ -1600,7 +1600,7 @@ const ParsedPoints = [
   },
   {
     id: 3181,
-    coordinates: [-75.17514, 39.89629],
+    coordinates: [39.89629, -75.17514],
     name: 'Crescent Park, Crescent Drive',
     address: 'Crescent Park, Crescent Drive',
     bikes: 6,
@@ -1613,7 +1613,7 @@ const ParsedPoints = [
   },
   {
     id: 3182,
-    coordinates: [-75.16953, 39.95081],
+    coordinates: [39.95081, -75.16953],
     name: '17th & Sansom',
     address: '17th & Sansom',
     bikes: 18,
@@ -1626,7 +1626,7 @@ const ParsedPoints = [
   },
   {
     id: 3183,
-    coordinates: [-75.17679, 39.88994],
+    coordinates: [39.88994, -75.17679],
     name: 'S. 15th & Kitty Hawk Ave',
     address: 'S. 15th & Kitty Hawk Ave',
     bikes: 15,
@@ -1639,7 +1639,7 @@ const ParsedPoints = [
   },
   {
     id: 3184,
-    coordinates: [-75.19551, 39.94573],
+    coordinates: [39.94573, -75.19551],
     name: 'Health Sciences Drive',
     address: 'Health Sciences Drive',
     bikes: 15,
@@ -1652,7 +1652,7 @@ const ParsedPoints = [
   },
   {
     id: 3185,
-    coordinates: [-75.15888, 39.95169],
+    coordinates: [39.95169, -75.15888],
     name: '11th & Market',
     address: '11th & Market',
     bikes: 16,
@@ -1665,7 +1665,7 @@ const ParsedPoints = [
   },
   {
     id: 3186,
-    coordinates: [-75.17168, 39.89307],
+    coordinates: [39.89307, -75.17168],
     name: '12th & Normandy Place',
     address: '12th & Normandy Place',
     bikes: 10,
@@ -1678,7 +1678,7 @@ const ParsedPoints = [
   },
   {
     id: 3187,
-    coordinates: [-75.17232, 39.95725],
+    coordinates: [39.95725, -75.17232],
     name: '20th & Race',
     address: '20th & Race',
     bikes: 9,
@@ -1691,7 +1691,7 @@ const ParsedPoints = [
   },
   {
     id: 3188,
-    coordinates: [-75.1734, 39.90471],
+    coordinates: [39.90471, -75.1734],
     name: '3701 Broad Street',
     address: '3701 Broad Street',
     bikes: 9,
@@ -1704,7 +1704,7 @@ const ParsedPoints = [
   },
   {
     id: 3190,
-    coordinates: [-75.16991, 39.94892],
+    coordinates: [39.94892, -75.16991],
     name: '1700 Locust Street',
     address: '1700 Locust Street',
     bikes: 21,

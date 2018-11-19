@@ -14,7 +14,8 @@ export const parsePoints = rawPoints => {
     const { geometry, properties } = rawPoint;
     parsedPoints.push({
       id: properties.kioskId,
-      coordinates: geometry.coordinates,
+      // thanks, indego!
+      coordinates: [geometry.coordinates[1], geometry.coordinates[0]],
       name: properties.addressStreet,
       address: properties.addressStreet,
       bikes: properties.bikesAvailable,
