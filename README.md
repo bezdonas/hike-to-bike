@@ -13,14 +13,14 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 ## Via npm
 
 - `npm start` starts dev-server
-- `npm test` runs test via jest in watch mode
-- `npm run test:ci` runs test via jest once
+- `npm test` runs tests via jest in watch mode
+- `npm run test:ci` runs tests via jest once
 - `npm run build` builds production bundle in `./build`
 
 ## Via docker
 
 - `npm run dstart` starts dev-server (`docker-compose up`)
-- `npm run dtest` runs test in docker container (`docker-compose run hike-to-bike npm test`)
+- `npm run dtest` runs tests in docker container (`docker-compose run hike-to-bike npm run test:ci`)
 - `npm run dbuild` builds production bundle in `./build` (`docker-compose run hike-to-bike npm run build`)
 - `npm run dcleanup` cleans up all docker stuff (`docker-compose down --rmi all -v`)
 
