@@ -1,0 +1,35 @@
+{
+  "name": "hike-to-bike",
+  "version": "1.0.0",
+  "description": "Simple app for finding closest indego bycicle station",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --config webpack/development.config.js",
+    "build": "webpack --config webpack/prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bezdonas/hike-to-bike.git"
+  },
+  "keywords": [
+    "indego",
+    "bycicle",
+    "map",
+    "test"
+  ],
+  "author": "Ramil Aliev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bezdonas/hike-to-bike/issues"
+  },
+  "homepage": "https://github.com/bezdonas/hike-to-bike#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.15.2",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

@@ -8,4 +8,10 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 
 # Quick start
 
+- `npm start` starts dev-server
+- `npm run build` builds production bundle in `./build`
+
 # Technologies
+
+- [webpack](https://webpack.js.org/)
+- [prettier](https://prettier.io/)
