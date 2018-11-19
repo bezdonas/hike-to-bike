@@ -1,0 +1,18 @@
+sudo: required
+services:
+  - docker
+env:
+  NODE_ENV: production
+script:
+  - docker-compose up --no-start
+  - npm run dbuild
+  - npm run dtest
+deploy:
+  provider: heroku
+  api_key:
+    secure: ${HEROKU_TOKEN}
+  app: hike-to-bike
+  on: master
+  skip_cleanup: true
+after_deploy:
+  - npm run dcleanup
