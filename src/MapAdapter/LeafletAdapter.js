@@ -17,3 +17,16 @@ export const addMarkerToMap = (mapInstance, latLng, markerOptions) => {
   marker.addTo(mapInstance);
   return marker;
 };
+
+export const distanceBetweenTwoPoints = (coords1, coords2) => {
+  return Leaflet.CRS.Simple.distance(
+    {
+      lat: coords1[0],
+      lng: coords1[1],
+    },
+    {
+      lat: coords2[0],
+      lng: coords2[1],
+    }
+  );
+};
