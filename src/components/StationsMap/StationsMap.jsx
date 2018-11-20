@@ -3,8 +3,8 @@ import {
   initMap,
   mapPanTo,
   addMarkerToMap,
-  highlightMarker,
   addCurrentPosToMap,
+  removeMapLayer,
 } from '../../MapAdapter/LeafletAdapter.js';
 import {
   getStationsPromise,
@@ -20,26 +20,44 @@ export default class StationsMap extends Component {
   constructor(props) {
     super(props);
     this.mapInstance;
+    this.currentPositionMarker;
     this.markers = {};
     this.points = [];
+    this.closestPointIds = [];
   }
 
-  setClosestPoints() {
-    getClosestPoints(this.props.currentPosition, this.points).forEach(
-      pointId => {
-        highlightMarker(this.markers[pointId]);
-      }
+  addClosestPoints() {
+    this.closestPointIds = getClosestPoints(
+      this.props.currentPosition,
+      this.points
     );
+    this.closestPointIds.forEach(pointId => {
+      this.markers[pointId] = addMarkerToMap(
+        this.mapInstance,
+        // TODO: this is lousy: rethink structure of data keep
+        this.points.filter(point => point.id === pointId)[0].coordinates
+      );
+    });
+  }
+
+  removeOldClosestPoints() {
+    this.closestPointIds.forEach(pointId => {
+      removeMapLayer(this.markers[pointId]);
+    });
   }
 
   showCurrentPosition() {
-    addCurrentPosToMap(this.mapInstance, this.props.currentPosition);
+    this.currentPositionMarker = addCurrentPosToMap(
+      this.mapInstance,
+      this.props.currentPosition
+    );
+  }
+
+  removeOldCurrentPosition() {
+    removeMapLayer(this.currentPositionMarker);
   }
 
   componentDidMount() {
-    this.markers = {};
-    this.mapInstance;
-
     this.mapInstance = initMap(
       'stations-map',
       this.props.currentPosition,
@@ -49,21 +67,19 @@ export default class StationsMap extends Component {
 
     getStationsPromise().then(points => {
       this.points = points;
-      points.forEach(point => {
-        this.markers[point.id] = addMarkerToMap(
-          this.mapInstance,
-          point.coordinates
-        );
-      });
-      this.setClosestPoints();
+      this.addClosestPoints();
     });
   }
 
+  componentWillUpdate() {
+    this.removeOldClosestPoints();
+    this.removeOldCurrentPosition();
+  }
+
   componentDidUpdate() {
-    const currentPosition = this.props.currentPosition;
-    mapPanTo(this.mapInstance, currentPosition);
+    mapPanTo(this.mapInstance, this.props.currentPosition);
     this.showCurrentPosition();
-    this.setClosestPoints();
+    this.addClosestPoints();
   }
 
   render() {

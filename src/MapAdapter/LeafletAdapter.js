@@ -16,29 +16,20 @@ export const mapPanTo = (mapInstance, coords) => {
   mapInstance.panTo(coords);
 };
 
-export const addMarkerToMap = (
-  mapInstance,
-  latLng,
-  markerOptions = { opacity: 0.25 }
-) => {
+export const addMarkerToMap = (mapInstance, latLng, markerOptions) => {
   const marker = Leaflet.marker(latLng, markerOptions);
   marker.addTo(mapInstance);
   return marker;
 };
 
-export const highlightMarker = marker => {
-  marker.setOpacity(1);
+export const addCurrentPosToMap = (mapInstance, latLng) => {
+  return addMarkerToMap(mapInstance, latLng, {
+    icon: Leaflet.divIcon({ className: 'current-position-icon' }),
+  });
 };
 
-export const addCurrentPosToMap = (mapInstance, latLng) => {
-  const circle = Leaflet.circle(latLng, {
-    color: 'white',
-    fillColor: '#4285F4',
-    fillOpacity: 1,
-    radius: 30,
-  });
-  circle.addTo(mapInstance);
-  return circle;
+export const removeMapLayer = layer => {
+  layer.remove();
 };
 
 export const distanceBetweenTwoPoints = (coords1, coords2) => {
