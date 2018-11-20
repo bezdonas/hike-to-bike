@@ -12,18 +12,30 @@ export const initMap = (className, coords, zoom) => {
   return mapInstance;
 };
 
-export const addMarkerToMap = (mapInstance, latLng, markerOptions) => {
+export const mapPanTo = (mapInstance, coords) => {
+  mapInstance.panTo(coords);
+};
+
+export const addMarkerToMap = (
+  mapInstance,
+  latLng,
+  markerOptions = { opacity: 0.25 }
+) => {
   const marker = Leaflet.marker(latLng, markerOptions);
   marker.addTo(mapInstance);
   return marker;
 };
 
+export const highlightMarker = marker => {
+  marker.setOpacity(1);
+};
+
 export const addCurrentPosToMap = (mapInstance, latLng) => {
   const circle = Leaflet.circle(latLng, {
-    color: 'blue',
-    fillColor: 'blue',
-    fillOpacity: 0.5,
-    radius: 15,
+    color: 'white',
+    fillColor: '#4285F4',
+    fillOpacity: 1,
+    radius: 30,
   });
   circle.addTo(mapInstance);
   return circle;

@@ -1,7 +1,9 @@
 import { h, Component } from 'preact';
 import {
   initMap,
+  mapPanTo,
   addMarkerToMap,
+  highlightMarker,
   addCurrentPosToMap,
 } from '../../MapAdapter/LeafletAdapter.js';
 import {
@@ -15,27 +17,55 @@ const defaultZoom = 15;
 
 // StationsMapProps = { currentPosition: [lat, lng] }
 export default class StationsMap extends Component {
+  constructor(props) {
+    super(props);
+    this.mapInstance;
+    this.markers = {};
+    this.points = [];
+  }
+
+  setClosestPoints() {
+    getClosestPoints(this.props.currentPosition, this.points).forEach(
+      pointId => {
+        highlightMarker(this.markers[pointId]);
+      }
+    );
+  }
+
+  showCurrentPosition() {
+    addCurrentPosToMap(this.mapInstance, this.props.currentPosition);
+  }
+
   componentDidMount() {
     this.markers = {};
     this.mapInstance;
-    const currentPosition = this.props.currentPosition;
 
-    this.mapInstance = initMap('stations-map', currentPosition, defaultZoom);
-    addCurrentPosToMap(this.mapInstance, currentPosition);
+    this.mapInstance = initMap(
+      'stations-map',
+      this.props.currentPosition,
+      defaultZoom
+    );
+    this.showCurrentPosition();
 
     getStationsPromise().then(points => {
+      this.points = points;
       points.forEach(point => {
         this.markers[point.id] = addMarkerToMap(
           this.mapInstance,
-          point.coordinates,
-          { opacity: 0.25 }
+          point.coordinates
         );
       });
-      getClosestPoints(currentPosition, points).forEach(pointId => {
-        this.markers[pointId].setOpacity(1);
-      });
+      this.setClosestPoints();
     });
   }
+
+  componentDidUpdate() {
+    const currentPosition = this.props.currentPosition;
+    mapPanTo(this.mapInstance, currentPosition);
+    this.showCurrentPosition();
+    this.setClosestPoints();
+  }
+
   render() {
     return <div id="stations-map" className="stations-map" />;
   }
