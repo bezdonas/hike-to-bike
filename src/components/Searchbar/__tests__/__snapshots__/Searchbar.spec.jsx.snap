@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searchbar renders as expected and matches snapshot 1`] = `
+<input
+  class="searchbar"
+  onChange={[Function]}
+  type="text"
+  value={
+    Array [
+      1,
+      1,
+    ]
+  }
+/>
+`;

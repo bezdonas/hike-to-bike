@@ -80,8 +80,4 @@ describe('StationsApi', () => {
       ]);
     });
   });
-
-  describe('isOpen function', () => {
-    it('stub', () => {});
-  });
 });

@@ -1,26 +1,34 @@
 import { h, Component } from 'preact';
 import StationsMap from './StationsMap/StationsMap.jsx';
+import Searchbar from './Searchbar/Searchbar.jsx';
+import Sidebar from './Sidebar/Sidebar.jsx';
+import Logo from './Logo/Logo.jsx';
 
+const defaultPosition = [39.953, -75.171];
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPosition: [39.953, -75.171],
+      currentPosition: defaultPosition,
     };
+
+    this.handleChangePosition = this.handleChangePosition.bind(this);
   }
-  componentDidMount() {
-    // setInterval(() => {
-    //   this.setState({
-    //     currentPosition: [
-    //       this.state.currentPosition[0] + (Math.random() - 0.5) * 0.005,
-    //       this.state.currentPosition[1] + (Math.random() - 0.5) * 0.005,
-    //     ],
-    //   });
-    // }, 1000);
+  handleChangePosition(newPosition) {
+    this.setState({
+      currentPosition: newPosition.split(','),
+    });
   }
   render(props, state) {
     return (
       <div id="app">
+        <Sidebar>
+          <Logo />
+          <Searchbar
+            position={this.state.currentPosition}
+            changePosition={this.handleChangePosition}
+          />
+        </Sidebar>
         <StationsMap currentPosition={this.state.currentPosition} />
       </div>
     );

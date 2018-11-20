@@ -4,6 +4,26 @@ exports[`App smoke renders and matches snapshot 1`] = `
 <div
   id="app"
 >
+  <aside
+    class="sidebar"
+  >
+    <h1
+      class="logo-block"
+    >
+      Hike to a bike
+    </h1>
+    <input
+      class="searchbar"
+      onChange={[Function]}
+      type="text"
+      value={
+        Array [
+          39.953,
+          -75.171,
+        ]
+      }
+    />
+  </aside>
   <div
     class="stations-map"
     id="stations-map"
