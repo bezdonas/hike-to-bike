@@ -23,26 +23,25 @@ export default class StationsMap extends Component {
     this.currentPositionMarker;
     this.markers = {};
     this.allStations = [];
-    this.closestStationsIds = [];
+    this.closestStations = [];
   }
 
   addClosestStations() {
-    this.closestStationsIds = getClosestStations(
+    this.closestStations = getClosestStations(
       this.props.currentPosition,
       this.allStations
     );
-    this.closestStationsIds.forEach(pointId => {
-      this.markers[pointId] = addMarkerToMap(
+    this.closestStations.forEach(station => {
+      this.markers[station.id] = addMarkerToMap(
         this.mapInstance,
-        // TODO: this is lousy: rethink structure of data keep
-        this.allStations.filter(point => point.id === pointId)[0].coordinates
+        station.coordinates
       );
     });
   }
 
   removeOldClosestStations() {
-    this.closestStationsIds.forEach(pointId => {
-      removeMarker(this.markers[pointId]);
+    this.closestStations.forEach(station => {
+      removeMarker(this.markers[station.id]);
     });
   }
 

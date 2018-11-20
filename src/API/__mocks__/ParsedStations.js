@@ -1,6 +1,5 @@
-const ParsedStations = [
-  {
-    id: 3004,
+const ParsedStations = {
+  3004: {
     coordinates: [39.95378, -75.16374],
     name: '1401 John F. Kennedy Blvd.',
     address: '1401 John F. Kennedy Blvd.',
@@ -12,8 +11,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3005,
+  3005: {
     coordinates: [39.94733, -75.14403],
     name: '191 S. 2nd St.',
     address: '191 S. 2nd St.',
@@ -25,8 +23,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3006,
+  3006: {
     coordinates: [39.9522, -75.20311],
     name: '246 S. 40th St.',
     address: '246 S. 40th St.',
@@ -38,8 +35,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3007,
+  3007: {
     coordinates: [39.94517, -75.15993],
     name: '328 S. 11th St.',
     address: '328 S. 11th St.',
@@ -51,8 +47,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3008,
+  3008: {
     coordinates: [39.98078, -75.15055],
     name: '1076 Berks Street',
     address: '1076 Berks Street',
@@ -64,8 +59,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3009,
+  3009: {
     coordinates: [39.95576, -75.18982],
     name: '3318 Market St.',
     address: '3318 Market St.',
@@ -77,8 +71,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3010,
+  3010: {
     coordinates: [39.94711, -75.16618],
     name: '1483 Spruce St.',
     address: '1483 Spruce St.',
@@ -90,8 +83,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3011,
+  3011: {
     coordinates: [39.95949, -75.1969],
     name: '3788 Powelton Avenue',
     address: '3788 Powelton Avenue',
@@ -103,8 +95,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3012,
+  3012: {
     coordinates: [39.94218, -75.17747],
     name: '807 S. 21st St.',
     address: '807 S. 21st St.',
@@ -116,8 +107,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3013,
+  3013: {
     coordinates: [39.96317, -75.14792],
     name: '674 N. 6th St.',
     address: '674 N. 6th St.',
@@ -129,8 +119,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3014,
+  3014: {
     coordinates: [39.95886, -75.17369],
     name: '2090 Winter St.',
     address: '2090 Winter St.',
@@ -142,8 +131,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3015,
+  3015: {
     coordinates: [39.94735, -75.14886],
     name: '422 Walnut St.',
     address: '422 Walnut St.',
@@ -155,8 +143,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3016,
+  3016: {
     coordinates: [39.96892, -75.1547],
     name: '1100 Poplar St.',
     address: '1100 Poplar St.',
@@ -168,8 +155,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3017,
+  3017: {
     coordinates: [39.98003, -75.14371],
     name: '527 W. Berks St.',
     address: '527 W. Berks St.',
@@ -181,8 +167,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3018,
+  3018: {
     coordinates: [39.95273, -75.15979],
     name: '1200 Filbert St.',
     address: '1200 Filbert St.',
@@ -194,8 +179,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3019,
+  3019: {
     coordinates: [39.95403, -75.14983],
     name: '160 N. 6th St.',
     address: '160 N. 6th St.',
@@ -207,8 +191,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3020,
+  3020: {
     coordinates: [39.94922, -75.19036],
     name: '3051 South St.',
     address: '3051 South St.',
@@ -220,8 +203,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3021,
+  3021: {
     coordinates: [39.9539, -75.16902],
     name: '1750 John F. Kennedy Blvd.',
     address: '1750 John F. Kennedy Blvd.',
@@ -233,8 +215,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3022,
+  3022: {
     coordinates: [39.95472, -75.18323],
     name: '2933 Market Street',
     address: '2933 Market Street',
@@ -246,8 +227,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3024,
+  3024: {
     coordinates: [39.94822, -75.20908],
     name: '598 S. 43rd St.',
     address: '598 S. 43rd St.',
@@ -259,8 +239,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3025,
+  3025: {
     coordinates: [39.93724, -75.1612],
     name: '1084 Washington Ave.',
     address: '1084 Washington Ave.',
@@ -272,8 +251,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3026,
+  3026: {
     coordinates: [39.94138, -75.14564],
     name: '523 S. 2nd St.',
     address: '523 S. 2nd St.',
@@ -285,8 +263,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3027,
+  3027: {
     coordinates: [39.95694, -75.20069],
     name: '3984 Market St.',
     address: '3984 Market St.',
@@ -298,8 +275,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3028,
+  3028: {
     coordinates: [39.94061, -75.14958],
     name: '404 Bainbridge St.',
     address: '404 Bainbridge St.',
@@ -311,8 +287,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3029,
+  3029: {
     coordinates: [39.9538, -75.19479],
     name: '125 S. 36th St.',
     address: '125 S. 36th St.',
@@ -324,8 +299,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3030,
+  3030: {
     coordinates: [39.93935, -75.15716],
     name: '840 S. Darien St.',
     address: '840 S. Darien St.',
@@ -337,8 +311,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3031,
+  3031: {
     coordinates: [39.98005, -75.15522],
     name: '1284 W. Montgomery Ave.',
     address: '1284 W. Montgomery Ave.',
@@ -350,8 +323,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3032,
+  3032: {
     coordinates: [39.94527, -75.17971],
     name: '671 S. 23rd St.',
     address: '671 S. 23rd St.',
@@ -363,8 +335,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3033,
+  3033: {
     coordinates: [39.95005, -75.15672],
     name: '921 Chestnut St.',
     address: '921 Chestnut St.',
@@ -376,8 +347,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3034,
+  3034: {
     coordinates: [39.93315, -75.16248],
     name: '1116 Reed St.',
     address: '1116 Reed St.',
@@ -389,8 +359,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3035,
+  3035: {
     coordinates: [39.96271, -75.19419],
     name: '3599 Spring Garden',
     address: '3599 Spring Garden',
@@ -402,8 +371,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3036,
+  3036: {
     coordinates: [39.96844, -75.14001],
     name: '1104 Germantown Ave.',
     address: '1104 Germantown Ave.',
@@ -415,8 +383,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3037,
+  3037: {
     coordinates: [39.95424, -75.16138],
     name: '1321 Arch St.',
     address: '1321 Arch St.',
@@ -428,8 +395,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3038,
+  3038: {
     coordinates: [39.94781, -75.19409],
     name: '3499 Civic Center Blvd.',
     address: '3499 Civic Center Blvd.',
@@ -441,8 +407,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3039,
+  3039: {
     coordinates: [39.97121, -75.1597],
     name: '922 N. Broad St.',
     address: '922 N. Broad St.',
@@ -454,8 +419,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3040,
+  3040: {
     coordinates: [39.96289, -75.16606],
     name: '1684 Spring Garden St.',
     address: '1684 Spring Garden St.',
@@ -467,8 +431,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3041,
+  3041: {
     coordinates: [39.96849, -75.13546],
     name: '1176 Leopard Ave.',
     address: '1176 Leopard Ave.',
@@ -480,8 +443,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3043,
+  3043: {
     coordinates: [39.93082, -75.17474],
     name: '1625 S. 18th St.',
     address: '1625 S. 18th St.',
@@ -493,8 +455,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3045,
+  3045: {
     coordinates: [39.94792, -75.16237],
     name: '213 S. 13th St.',
     address: '213 S. 13th St.',
@@ -506,8 +467,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3046,
+  3046: {
     coordinates: [39.95012, -75.14472],
     name: '215 Market St.',
     address: '215 Market St.',
@@ -519,8 +479,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3047,
+  3047: {
     coordinates: [39.95071, -75.14921],
     name: '519 Market St.',
     address: '519 Market St.',
@@ -532,8 +491,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3049,
+  3049: {
     coordinates: [39.94509, -75.1425],
     name: '3 Dock St.',
     address: '3 Dock St.',
@@ -545,8 +503,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3050,
+  3050: {
     coordinates: [39.95339, -75.15426],
     name: '813 Arch St.',
     address: '813 Arch St.',
@@ -558,8 +515,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3051,
+  3051: {
     coordinates: [39.96744, -75.17507],
     name: '2237 Fairmount Ave.',
     address: '2237 Fairmount Ave.',
@@ -571,8 +527,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3052,
+  3052: {
     coordinates: [39.94732, -75.15695],
     name: '923 Locust St.',
     address: '923 Locust St.',
@@ -584,8 +539,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3053,
+  3053: {
     coordinates: [39.93231, -75.18154],
     name: '1575 Point Breeze Ave.',
     address: '1575 Point Breeze Ave.',
@@ -597,8 +551,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3054,
+  3054: {
     coordinates: [39.9625, -75.1742],
     name: '2170 Hamilton St.',
     address: '2170 Hamilton St.',
@@ -610,8 +563,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3055,
+  3055: {
     coordinates: [39.95112, -75.15457],
     name: '834 Market St.',
     address: '834 Market St.',
@@ -623,8 +575,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3056,
+  3056: {
     coordinates: [39.97669, -75.15813],
     name: '1501 N. Broad St.',
     address: '1501 N. Broad St.',
@@ -636,8 +587,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3057,
+  3057: {
     coordinates: [39.96444, -75.17995],
     name: 'Schuylkill River Trail',
     address: 'Schuylkill River Trail',
@@ -649,8 +599,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3058,
+  3058: {
     coordinates: [39.96716, -75.17001],
     name: '1940 Fairmount Ave.',
     address: '1940 Fairmount Ave.',
@@ -662,8 +611,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3059,
+  3059: {
     coordinates: [39.96265, -75.16174],
     name: '1415 Spring Garden St.',
     address: '1415 Spring Garden St.',
@@ -675,8 +623,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3060,
+  3060: {
     coordinates: [39.95923, -75.17036],
     name: '302 N. 19th St.',
     address: '302 N. 19th St.',
@@ -688,8 +635,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3061,
+  3061: {
     coordinates: [39.95425, -75.17761],
     name: '2241 Market St.',
     address: '2241 Market St.',
@@ -701,8 +647,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3062,
+  3062: {
     coordinates: [39.95197, -75.17943],
     name: '120 S. 24th St.',
     address: '120 S. 24th St.',
@@ -714,8 +659,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3063,
+  3063: {
     coordinates: [39.94633, -75.1698],
     name: '391  S. 17th St.',
     address: '391  S. 17th St.',
@@ -727,8 +671,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3064,
+  3064: {
     coordinates: [39.9384, -75.17327],
     name: '1800 Washington Ave.',
     address: '1800 Washington Ave.',
@@ -740,8 +683,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3065,
+  3065: {
     coordinates: [39.9707, -75.15171],
     name: '915 W. Girard Ave.',
     address: '915 W. Girard Ave.',
@@ -753,8 +695,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3066,
+  3066: {
     coordinates: [39.94561, -75.17348],
     name: '1910 Lombard St.',
     address: '1910 Lombard St.',
@@ -766,8 +707,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3067,
+  3067: {
     coordinates: [39.96411, -75.19973],
     name: '631 N. 39th St.',
     address: '631 N. 39th St.',
@@ -779,8 +719,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3068,
+  3068: {
     coordinates: [39.93549, -75.16711],
     name: '1201 S. Broad St.',
     address: '1201 S. Broad St.',
@@ -792,8 +731,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3069,
+  3069: {
     coordinates: [39.93704, -75.15038],
     name: '403 Christian St.',
     address: '403 Christian St.',
@@ -805,8 +743,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3070,
+  3070: {
     coordinates: [39.96062, -75.13983],
     name: '117 Spring Garden St.',
     address: '117 Spring Garden St.',
@@ -818,8 +755,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3071,
+  3071: {
     coordinates: [39.96173, -75.18788],
     name: '3170 Baring St.',
     address: '3170 Baring St.',
@@ -831,8 +767,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3072,
+  3072: {
     coordinates: [39.93445, -75.14541],
     name: '925 S. Front St.',
     address: '925 S. Front St.',
@@ -844,8 +779,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3073,
+  3073: {
     coordinates: [39.96143, -75.15242],
     name: '802 Spring Garden St.',
     address: '802 Spring Garden St.',
@@ -857,8 +791,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3074,
+  3074: {
     coordinates: [39.95511, -75.20987],
     name: '160 S. 44th St.',
     address: '160 S. 44th St.',
@@ -870,8 +803,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3075,
+  3075: {
     coordinates: [39.96718, -75.16125],
     name: '1413 Fairmount Ave.',
     address: '1413 Fairmount Ave.',
@@ -883,8 +815,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3077,
+  3077: {
     coordinates: [39.97207, -75.16351],
     name: '1617 Girard Ave.',
     address: '1617 Girard Ave.',
@@ -896,8 +827,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3078,
+  3078: {
     coordinates: [39.95355, -75.17192],
     name: '1901 Market St.',
     address: '1901 Market St.',
@@ -909,8 +839,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3086,
+  3086: {
     coordinates: [39.94019, -75.16691],
     name: '1406 Christian Street',
     address: '1406 Christian Street',
@@ -922,8 +851,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3088,
+  3088: {
     coordinates: [39.96984, -75.1418],
     name: '317 W. Girard Ave. ',
     address: '317 W. Girard Ave. ',
@@ -935,8 +863,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:03:00',
   },
-  {
-    id: 3093,
+  3093: {
     coordinates: [39.98837, -75.18701],
     name: '2039 N. 33rd Street',
     address: '2039 N. 33rd Street',
@@ -948,8 +875,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3095,
+  3095: {
     coordinates: [39.98771, -75.18052],
     name: '2039 N. 29th Street',
     address: '2039 N. 29th Street',
@@ -961,8 +887,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3096,
+  3096: {
     coordinates: [39.99119, -75.17975],
     name: '2301 N. 29th Street',
     address: '2301 N. 29th Street',
@@ -974,8 +899,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3097,
+  3097: {
     coordinates: [39.97888, -75.13339],
     name: '1902 N. Front Street',
     address: '1902 N. Front Street',
@@ -987,8 +911,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3098,
+  3098: {
     coordinates: [39.93431, -75.16042],
     name: '1201 S. 10th Street',
     address: '1201 S. 10th Street',
@@ -1000,8 +923,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3099,
+  3099: {
     coordinates: [39.93401, -75.15094],
     name: '1110 S. 4th Street',
     address: '1110 S. 4th Street',
@@ -1013,8 +935,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3100,
+  3100: {
     coordinates: [39.92777, -75.15103],
     name: '1600 E. Moyamensing',
     address: '1600 E. Moyamensing',
@@ -1026,8 +947,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3101,
+  3101: {
     coordinates: [39.94295, -75.15955],
     name: '1015 South Street',
     address: '1015 South Street',
@@ -1039,8 +959,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3102,
+  3102: {
     coordinates: [39.96759, -75.17952],
     name: '2601 Pennsylvania Avenue',
     address: '2601 Pennsylvania Avenue',
@@ -1052,8 +971,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3103,
+  3103: {
     coordinates: [39.97714, -75.1794],
     name: '2651 Master Street',
     address: '2651 Master Street',
@@ -1065,8 +983,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3104,
+  3104: {
     coordinates: [39.96664, -75.19209],
     name: '712 N. 34th Street',
     address: '712 N. 34th Street',
@@ -1078,8 +995,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3105,
+  3105: {
     coordinates: [39.96207, -75.14111],
     name: '703 N 2nd St.',
     address: '703 N 2nd St.',
@@ -1091,8 +1007,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3106,
+  3106: {
     coordinates: [39.99179, -75.18637],
     name: '2300 N. 33rd Street',
     address: '2300 N. 33rd Street',
@@ -1104,8 +1019,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3107,
+  3107: {
     coordinates: [39.98203, -75.18866],
     name: '1626 N. 33rd Street',
     address: '1626 N. 33rd Street',
@@ -1117,8 +1031,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3108,
+  3108: {
     coordinates: [39.95316, -75.16551],
     name: '1515 Market Street',
     address: '1515 Market Street',
@@ -1130,8 +1043,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3110,
+  3110: {
     coordinates: [39.96175, -75.13641],
     name: '779 Delaware Ave',
     address: '779 Delaware Ave',
@@ -1143,8 +1055,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3111,
+  3111: {
     coordinates: [39.97779, -75.21323],
     name: '4601 Parkside Ave',
     address: '4601 Parkside Ave',
@@ -1156,8 +1067,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3112,
+  3112: {
     coordinates: [39.95373, -75.21825],
     name: '310 S. 48th Street',
     address: '310 S. 48th Street',
@@ -1169,8 +1079,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3113,
+  3113: {
     coordinates: [39.97472, -75.19781],
     name: '1046 N. 34th Street',
     address: '1046 N. 34th Street',
@@ -1182,8 +1091,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3114,
+  3114: {
     coordinates: [39.93775, -75.18012],
     name: '22nd & Federal St.',
     address: '22nd & Federal St.',
@@ -1195,8 +1103,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3115,
+  3115: {
     coordinates: [39.97263, -75.16757],
     name: '1901 W. Girard St..',
     address: '1901 W. Girard St..',
@@ -1208,8 +1115,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3116,
+  3116: {
     coordinates: [39.96006, -75.17198],
     name: '2025 Benjamin Franklin Pkwy',
     address: '2025 Benjamin Franklin Pkwy',
@@ -1221,8 +1127,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3117,
+  3117: {
     coordinates: [39.97841, -75.22399],
     name: '1575 N 52nd St.',
     address: '1575 N 52nd St.',
@@ -1234,8 +1139,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3118,
+  3118: {
     coordinates: [39.95866, -75.21323],
     name: '4628 Market Street',
     address: '4628 Market Street',
@@ -1247,8 +1151,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3119,
+  3119: {
     coordinates: [39.96674, -75.20799],
     name: '4209 Lancaster Avenue',
     address: '4209 Lancaster Avenue',
@@ -1260,8 +1163,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3120,
+  3120: {
     coordinates: [39.97522, -75.18669],
     name: '1210 N. 31st Street',
     address: '1210 N. 31st Street',
@@ -1273,8 +1175,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3121,
+  3121: {
     coordinates: [39.97414, -75.18022],
     name: '2698 W Girard',
     address: '2698 W Girard',
@@ -1286,8 +1187,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3123,
+  3123: {
     coordinates: [39.98004, -75.17088],
     name: '1637 N. 22nd Street',
     address: '1637 N. 22nd Street',
@@ -1299,8 +1199,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3124,
+  3124: {
     coordinates: [39.95295, -75.13979],
     name: '190 N Christopher Columbus Blvd (approx.)',
     address: '190 N Christopher Columbus Blvd (approx.)',
@@ -1312,8 +1211,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3125,
+  3125: {
     coordinates: [39.94391, -75.16735],
     name: '1505 South St. ',
     address: '1505 South St. ',
@@ -1325,8 +1223,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3129,
+  3129: {
     coordinates: [39.94681, -75.19311],
     name: 'East Service Drive',
     address: 'East Service Drive',
@@ -1338,8 +1235,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3150,
+  3150: {
     coordinates: [39.92884, -75.17021],
     name: '1487 Castle Street',
     address: '1487 Castle Street',
@@ -1351,8 +1247,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3152,
+  3152: {
     coordinates: [39.94993, -75.20286],
     name: '3960 Baltimore Ave,',
     address: '3960 Baltimore Ave,',
@@ -1364,8 +1259,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3153,
+  3153: {
     coordinates: [39.97216, -75.12994],
     name: '448 East Thompson Street',
     address: '448 East Thompson Street',
@@ -1377,8 +1271,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3154,
+  3154: {
     coordinates: [39.95924, -75.15821],
     name: '403 N. 12th Street',
     address: '403 N. 12th Street',
@@ -1390,8 +1283,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3155,
+  3155: {
     coordinates: [39.94018, -75.15442],
     name: '736 S. 7th St.',
     address: '736 S. 7th St.',
@@ -1403,8 +1295,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3156,
+  3156: {
     coordinates: [39.95381, -75.17407],
     name: '2005 market street',
     address: '2005 market street',
@@ -1416,8 +1307,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3157,
+  3157: {
     coordinates: [39.92545, -75.15954],
     name: '808 Mifflin St.',
     address: '808 Mifflin St.',
@@ -1429,8 +1319,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3158,
+  3158: {
     coordinates: [39.92552, -75.16904],
     name: '1384 McKean Street',
     address: '1384 McKean Street',
@@ -1442,8 +1331,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3159,
+  3159: {
     coordinates: [39.95121, -75.19962],
     name: '3804 spruce street',
     address: '3804 spruce street',
@@ -1455,8 +1343,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3160,
+  3160: {
     coordinates: [39.95662, -75.19862],
     name: '3810 Market St.',
     address: '3810 Market St.',
@@ -1468,8 +1355,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3161,
+  3161: {
     coordinates: [39.95486, -75.18091],
     name: 'Market & Schuylkill Ave',
     address: 'Market & Schuylkill Ave',
@@ -1481,8 +1367,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3162,
+  3162: {
     coordinates: [39.94595, -75.18475],
     name: '630 Schuylkill Ave',
     address: '630 Schuylkill Ave',
@@ -1494,8 +1379,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3163,
+  3163: {
     coordinates: [39.94974, -75.18097],
     name: '229 S. 25th Street ',
     address: '229 S. 25th Street ',
@@ -1507,8 +1391,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3164,
+  3164: {
     coordinates: [39.92814, -75.16515],
     name: '1724 S. 12th St',
     address: '1724 S. 12th St',
@@ -1520,8 +1403,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3165,
+  3165: {
     coordinates: [39.95819, -75.1782],
     name: '2317 Race St',
     address: '2317 Race St',
@@ -1533,8 +1415,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3166,
+  3166: {
     coordinates: [39.97235, -75.13445],
     name: '1424 Frankford Ave',
     address: '1424 Frankford Ave',
@@ -1546,8 +1427,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3167,
+  3167: {
     coordinates: [39.95025, -75.16028],
     name: '118 S. 12th St.',
     address: '118 S. 12th St.',
@@ -1559,8 +1439,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3168,
+  3168: {
     coordinates: [39.95134, -75.17394],
     name: '129 S. 20th St.',
     address: '129 S. 20th St.',
@@ -1572,8 +1451,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3169,
+  3169: {
     coordinates: [39.95382, -75.14263],
     name: '151 Race St',
     address: '151 Race St',
@@ -1585,8 +1463,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3170,
+  3170: {
     coordinates: [39.94426, -75.18134],
     name: '2332 Grays Ferry Ave',
     address: '2332 Grays Ferry Ave',
@@ -1598,8 +1475,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3181,
+  3181: {
     coordinates: [39.89629, -75.17514],
     name: 'Crescent Park, Crescent Drive',
     address: 'Crescent Park, Crescent Drive',
@@ -1611,8 +1487,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3182,
+  3182: {
     coordinates: [39.95081, -75.16953],
     name: '17th & Sansom',
     address: '17th & Sansom',
@@ -1624,8 +1499,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3183,
+  3183: {
     coordinates: [39.88994, -75.17679],
     name: 'S. 15th & Kitty Hawk Ave',
     address: 'S. 15th & Kitty Hawk Ave',
@@ -1637,8 +1511,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3184,
+  3184: {
     coordinates: [39.94573, -75.19551],
     name: 'Health Sciences Drive',
     address: 'Health Sciences Drive',
@@ -1650,8 +1523,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3185,
+  3185: {
     coordinates: [39.95169, -75.15888],
     name: '11th & Market',
     address: '11th & Market',
@@ -1663,8 +1535,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3186,
+  3186: {
     coordinates: [39.89307, -75.17168],
     name: '12th & Normandy Place',
     address: '12th & Normandy Place',
@@ -1676,8 +1547,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3187,
+  3187: {
     coordinates: [39.95725, -75.17232],
     name: '20th & Race',
     address: '20th & Race',
@@ -1689,8 +1559,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3188,
+  3188: {
     coordinates: [39.90471, -75.1734],
     name: '3701 Broad Street',
     address: '3701 Broad Street',
@@ -1702,8 +1571,7 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-  {
-    id: 3190,
+  3190: {
     coordinates: [39.94892, -75.16991],
     name: '1700 Locust Street',
     address: '1700 Locust Street',
@@ -1715,5 +1583,5 @@ const ParsedStations = [
     closeTime: '23:58:00',
     openTime: '00:02:00',
   },
-];
+};
 export default ParsedStations;
