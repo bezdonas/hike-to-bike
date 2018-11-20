@@ -1,17 +1,86 @@
 import { h, Component } from 'preact';
-import { initMap, addMarkerToMap } from '../../MapAdapter/LeafletAdapter.js';
-import { getPromise, parsePoints } from '../../API/StationsApi.js';
+import {
+  initMap,
+  mapPanTo,
+  removeMarker,
+  addMarkerToMap,
+  addCurrentPosToMap,
+} from '../../MapAdapter/LeafletAdapter.js';
+import {
+  getStationsPromise,
+  parseStations,
+  getClosestStations,
+} from '../../API/StationsApi.js';
 import './stationsMap.css';
 
+const defaultZoom = 15;
+
+// StationsMapProps = { currentPosition: [lat, lng] }
 export default class StationsMap extends Component {
-  componentDidMount() {
-    const mapInstance = initMap('stations-map', [39.95355, -75.17192], 13);
-    getPromise().then(resp => {
-      parsePoints(resp.features).forEach(point => {
-        addMarkerToMap(mapInstance, point.coordinates);
-      });
+  constructor(props) {
+    super(props);
+    this.mapInstance;
+    this.currentPositionMarker;
+    this.markers = {};
+    this.allStations = [];
+    this.closestStations = [];
+  }
+
+  addClosestStations() {
+    this.closestStations = getClosestStations(
+      this.props.currentPosition,
+      this.allStations
+    );
+    this.closestStations.forEach(station => {
+      this.markers[station.id] = addMarkerToMap(
+        this.mapInstance,
+        station.coordinates
+      );
     });
   }
+
+  removeOldClosestStations() {
+    this.closestStations.forEach(station => {
+      removeMarker(this.markers[station.id]);
+    });
+  }
+
+  showCurrentPosition() {
+    this.currentPositionMarker = addCurrentPosToMap(
+      this.mapInstance,
+      this.props.currentPosition
+    );
+  }
+
+  removeOldCurrentPosition() {
+    removeMarker(this.currentPositionMarker);
+  }
+
+  componentDidMount() {
+    this.mapInstance = initMap(
+      'stations-map',
+      this.props.currentPosition,
+      defaultZoom
+    );
+    this.showCurrentPosition();
+
+    getStationsPromise().then(stations => {
+      this.allStations = stations;
+      this.addClosestStations();
+    });
+  }
+
+  componentWillUpdate() {
+    this.removeOldClosestStations();
+    this.removeOldCurrentPosition();
+  }
+
+  componentDidUpdate() {
+    mapPanTo(this.mapInstance, this.props.currentPosition);
+    this.showCurrentPosition();
+    this.addClosestStations();
+  }
+
   render() {
     return <div id="stations-map" className="stations-map" />;
   }

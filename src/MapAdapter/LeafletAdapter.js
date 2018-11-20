@@ -12,13 +12,27 @@ export const initMap = (className, coords, zoom) => {
   return mapInstance;
 };
 
+export const mapPanTo = (mapInstance, coords) => {
+  mapInstance.panTo(coords);
+};
+
 export const addMarkerToMap = (mapInstance, latLng, markerOptions) => {
   const marker = Leaflet.marker(latLng, markerOptions);
   marker.addTo(mapInstance);
   return marker;
 };
 
-export const distanceBetweenTwoPoints = (coords1, coords2) => {
+export const addCurrentPosToMap = (mapInstance, latLng) => {
+  return addMarkerToMap(mapInstance, latLng, {
+    icon: Leaflet.divIcon({ className: 'current-position-icon' }),
+  });
+};
+
+export const removeMarker = marker => {
+  marker.remove();
+};
+
+export const distanceBetweenTwoStations = (coords1, coords2) => {
   return Leaflet.CRS.Simple.distance(
     {
       lat: coords1[0],
