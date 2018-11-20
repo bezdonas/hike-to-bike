@@ -1,14 +1,38 @@
 import { h, Component } from 'preact';
-import { initMap, addMarkerToMap } from '../../MapAdapter/LeafletAdapter.js';
-import { getPromise, parsePoints } from '../../API/StationsApi.js';
+import {
+  initMap,
+  addMarkerToMap,
+  addCurrentPosToMap,
+} from '../../MapAdapter/LeafletAdapter.js';
+import {
+  getStationsPromise,
+  parsePoints,
+  getClosestPoints,
+} from '../../API/StationsApi.js';
 import './stationsMap.css';
 
+const defaultZoom = 15;
+
+// StationsMapProps = { currentPosition: [lat, lng] }
 export default class StationsMap extends Component {
   componentDidMount() {
-    const mapInstance = initMap('stations-map', [39.95355, -75.17192], 13);
-    getPromise().then(resp => {
-      parsePoints(resp.features).forEach(point => {
-        addMarkerToMap(mapInstance, point.coordinates);
+    this.markers = {};
+    this.mapInstance;
+    const currentPosition = this.props.currentPosition;
+
+    this.mapInstance = initMap('stations-map', currentPosition, defaultZoom);
+    addCurrentPosToMap(this.mapInstance, currentPosition);
+
+    getStationsPromise().then(points => {
+      points.forEach(point => {
+        this.markers[point.id] = addMarkerToMap(
+          this.mapInstance,
+          point.coordinates,
+          { opacity: 0.25 }
+        );
+      });
+      getClosestPoints(currentPosition, points).forEach(pointId => {
+        this.markers[pointId].setOpacity(1);
       });
     });
   }

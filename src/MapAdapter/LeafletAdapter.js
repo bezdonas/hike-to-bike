@@ -18,6 +18,17 @@ export const addMarkerToMap = (mapInstance, latLng, markerOptions) => {
   return marker;
 };
 
+export const addCurrentPosToMap = (mapInstance, latLng) => {
+  const circle = Leaflet.circle(latLng, {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 15,
+  });
+  circle.addTo(mapInstance);
+  return circle;
+};
+
 export const distanceBetweenTwoPoints = (coords1, coords2) => {
   return Leaflet.CRS.Simple.distance(
     {

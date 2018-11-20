@@ -2,7 +2,7 @@
 
 Simple app for finding closest [indego](https://www.rideindego.com/) bycicle station
 
-- [Demo](http://hike-to-bike.herokuapp.com)
+- [Demo](https://hike-to-bike.herokuapp.com)
 - [Travis CI](https://travis-ci.com/bezdonas/hike-to-bike/)
 
 - [Task](https://docs.google.com/document/d/1z3zuNeS7Gt0CbS9HMXQC-ta7ICUi35JA0Bn6kCYCGwQ/edit)

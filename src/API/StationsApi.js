@@ -1,11 +1,27 @@
 import axios from 'axios';
 import { distanceBetweenTwoPoints } from '../MapAdapter/LeafletAdapter.js';
+import { get } from 'lodash';
 
-const endpoint = '//www.rideindego.com/stations/json/';
+const endpoint = 'https://www.rideindego.com/stations/json/';
 
-export const getPromise = () => {
-  return axios.get('//www.rideindego.com/stations/json/');
+export const getStationsPromise = () => {
+  return new Promise((resolve, reject) => {
+    axios
+      .get(endpoint)
+      .then(response => {
+        resolve(parsePoints(get(response, 'data.features')));
+      })
+      .catch(error => {
+        alert(`Indego's API doesn't work :(
+               Look into console for details`);
+        console.error(error);
+        reject();
+      });
+  });
 };
+
+// indego API's coords are flipped ([lng, lat], instead of [lat,lng])
+export const flipCoords = coords => [coords[1], coords[0]];
 
 // look RawPoints.js and ParsedPoints.js in ../__mocks__/ for example of input -> output
 export const parsePoints = rawPoints => {
@@ -14,8 +30,7 @@ export const parsePoints = rawPoints => {
     const { geometry, properties } = rawPoint;
     parsedPoints.push({
       id: properties.kioskId,
-      // thanks, indego!
-      coordinates: [geometry.coordinates[1], geometry.coordinates[0]],
+      coordinates: flipCoords(geometry.coordinates),
       name: properties.addressStreet,
       address: properties.addressStreet,
       bikes: properties.bikesAvailable,
@@ -32,7 +47,7 @@ export const parsePoints = rawPoints => {
 
 // Takes current coords, parsed points and quantity of required points
 // returns the ${quanitity} of closest points
-export const getClosestPoints = (coords, points, quantity) => {
+export const getClosestPoints = (coords, points, quantity = 3) => {
   const pointProximityAndId = [];
   points.forEach(point => {
     const proximity = distanceBetweenTwoPoints(coords, point.coordinates);
