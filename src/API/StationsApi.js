@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { distanceBetweenTwoPoints } from '../MapAdapter/LeafletAdapter.js';
+import { distanceBetweenTwoStations } from '../MapAdapter/LeafletAdapter.js';
 import { get } from 'lodash';
 
 const endpoint = 'https://www.rideindego.com/stations/json/';
@@ -9,7 +9,7 @@ export const getStationsPromise = () => {
     axios
       .get(endpoint)
       .then(response => {
-        resolve(parsePoints(get(response, 'data.features')));
+        resolve(parseStations(get(response, 'data.features')));
       })
       .catch(error => {
         alert(`Indego's API doesn't work :(
@@ -23,12 +23,12 @@ export const getStationsPromise = () => {
 // indego API's coords are flipped ([lng, lat], instead of [lat,lng])
 export const flipCoords = coords => [coords[1], coords[0]];
 
-// look RawPoints.js and ParsedPoints.js in ../__mocks__/ for example of input -> output
-export const parsePoints = rawPoints => {
-  const parsedPoints = [];
-  rawPoints.forEach(rawPoint => {
+// look RawStations.js and ParsedStations.js in ../__mocks__/ for example of input -> output
+export const parseStations = rawStations => {
+  const parsedStations = [];
+  rawStations.forEach(rawPoint => {
     const { geometry, properties } = rawPoint;
-    parsedPoints.push({
+    parsedStations.push({
       id: properties.kioskId,
       coordinates: flipCoords(geometry.coordinates),
       name: properties.addressStreet,
@@ -42,15 +42,15 @@ export const parsePoints = rawPoints => {
       openTime: properties.openTime,
     });
   });
-  return parsedPoints;
+  return parsedStations;
 };
 
-// Takes current coords, parsed points and quantity of required points
-// returns the ${quanitity} of closest points
-export const getClosestPoints = (coords, points, quantity = 3) => {
+// Takes current coords, parsed stations and quantity of required stations
+// returns the ${quanitity} of closest stations
+export const getClosestStations = (coords, stations, quantity = 3) => {
   const pointProximityAndId = [];
-  points.forEach(point => {
-    const proximity = distanceBetweenTwoPoints(coords, point.coordinates);
+  stations.forEach(point => {
+    const proximity = distanceBetweenTwoStations(coords, point.coordinates);
     pointProximityAndId.push({
       id: point.id,
       proximity,
@@ -59,9 +59,9 @@ export const getClosestPoints = (coords, points, quantity = 3) => {
 
   // Closest go first
   pointProximityAndId.sort((a, b) => a.proximity - b.proximity);
-  const slicedClosestPoints = pointProximityAndId.slice(0, quantity);
+  const slicedClosestStations = pointProximityAndId.slice(0, quantity);
 
-  return slicedClosestPoints.map(point => point.id);
+  return slicedClosestStations.map(point => point.id);
 };
 
 export const isOpen = kioskId => {};

@@ -1,28 +1,26 @@
-import { parsePoints, getClosestPoints } from '../StationsApi.js';
-import RawPoints from '../__mocks__/RawPoints.js';
-import ParsedPoints from '../__mocks__/ParsedPoints.js';
+import { parseStations, getClosestStations } from '../StationsApi.js';
+import RawStations from '../__mocks__/RawStations.js';
+import ParsedStations from '../__mocks__/ParsedStations.js';
 import cloneDeep from 'lodash';
 
 describe('StationsApi', () => {
-  describe('parsePoints function', () => {
-    it('should parse RawPoints into ParsedPoints', () => {
-      const rawPoints = cloneDeep(RawPoints);
-      const parsedPoints = cloneDeep(ParsedPoints);
-      expect(cloneDeep(parsePoints(rawPoints))).toEqual(parsedPoints);
+  describe('parseStations function', () => {
+    it('should parse RawStations into ParsedStations', () => {
+      const rawStations = cloneDeep(RawStations);
+      const parsedStations = cloneDeep(ParsedStations);
+      expect(cloneDeep(parseStations(rawStations))).toEqual(parsedStations);
     });
   });
 
-  describe('getClosestPoints function', () => {
-    it('should return ids[] of closest ${quantity} points to passed coords', () => {
-      const parsedPoints = cloneDeep(ParsedPoints);
-      expect(getClosestPoints([39.95378, -75.16374], parsedPoints, 1)).toEqual([
-        3004,
-      ]);
-      expect(getClosestPoints([39.94517, -75.15993], parsedPoints, 3)).toEqual([
-        3007,
-        3101,
-        3052,
-      ]);
+  describe('getClosestStations function', () => {
+    it('should return ids[] of closest ${quantity} stations to passed coords', () => {
+      const parsedStations = cloneDeep(ParsedStations);
+      expect(
+        getClosestStations([39.95378, -75.16374], parsedStations, 1)
+      ).toEqual([3004]);
+      expect(
+        getClosestStations([39.94517, -75.15993], parsedStations, 3)
+      ).toEqual([3007, 3101, 3052]);
     });
   });
 

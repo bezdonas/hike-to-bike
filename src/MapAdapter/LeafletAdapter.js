@@ -28,11 +28,11 @@ export const addCurrentPosToMap = (mapInstance, latLng) => {
   });
 };
 
-export const removeMapLayer = layer => {
-  layer.remove();
+export const removeMarker = marker => {
+  marker.remove();
 };
 
-export const distanceBetweenTwoPoints = (coords1, coords2) => {
+export const distanceBetweenTwoStations = (coords1, coords2) => {
   return Leaflet.CRS.Simple.distance(
     {
       lat: coords1[0],

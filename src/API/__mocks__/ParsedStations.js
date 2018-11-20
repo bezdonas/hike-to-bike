@@ -1,4 +1,4 @@
-const ParsedPoints = [
+const ParsedStations = [
   {
     id: 3004,
     coordinates: [39.95378, -75.16374],
@@ -1716,4 +1716,4 @@ const ParsedPoints = [
     openTime: '00:02:00',
   },
 ];
-export default ParsedPoints;
+export default ParsedStations;

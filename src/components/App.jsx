@@ -9,14 +9,14 @@ export default class App extends Component {
     };
   }
   componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        currentPosition: [
-          this.state.currentPosition[0] - 0.001,
-          this.state.currentPosition[1] + 0.001,
-        ],
-      });
-    }, 1000);
+    // setInterval(() => {
+    //   this.setState({
+    //     currentPosition: [
+    //       this.state.currentPosition[0] + (Math.random() - 0.5) * 0.005,
+    //       this.state.currentPosition[1] + (Math.random() - 0.5) * 0.005,
+    //     ],
+    //   });
+    // }, 1000);
   }
   render(props, state) {
     return (

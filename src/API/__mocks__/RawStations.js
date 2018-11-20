@@ -1,4 +1,4 @@
-const RawPoints = [
+const RawStations = [
   {
     geometry: {
       coordinates: [-75.16374, 39.95378],
@@ -5149,4 +5149,4 @@ const RawPoints = [
     type: 'Feature',
   },
 ];
-export default RawPoints;
+export default RawStations;

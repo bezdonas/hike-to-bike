@@ -2,14 +2,14 @@ import { h, Component } from 'preact';
 import {
   initMap,
   mapPanTo,
+  removeMarker,
   addMarkerToMap,
   addCurrentPosToMap,
-  removeMapLayer,
 } from '../../MapAdapter/LeafletAdapter.js';
 import {
   getStationsPromise,
-  parsePoints,
-  getClosestPoints,
+  parseStations,
+  getClosestStations,
 } from '../../API/StationsApi.js';
 import './stationsMap.css';
 
@@ -22,27 +22,27 @@ export default class StationsMap extends Component {
     this.mapInstance;
     this.currentPositionMarker;
     this.markers = {};
-    this.points = [];
-    this.closestPointIds = [];
+    this.allStations = [];
+    this.closestStationsIds = [];
   }
 
-  addClosestPoints() {
-    this.closestPointIds = getClosestPoints(
+  addClosestStations() {
+    this.closestStationsIds = getClosestStations(
       this.props.currentPosition,
-      this.points
+      this.allStations
     );
-    this.closestPointIds.forEach(pointId => {
+    this.closestStationsIds.forEach(pointId => {
       this.markers[pointId] = addMarkerToMap(
         this.mapInstance,
         // TODO: this is lousy: rethink structure of data keep
-        this.points.filter(point => point.id === pointId)[0].coordinates
+        this.allStations.filter(point => point.id === pointId)[0].coordinates
       );
     });
   }
 
-  removeOldClosestPoints() {
-    this.closestPointIds.forEach(pointId => {
-      removeMapLayer(this.markers[pointId]);
+  removeOldClosestStations() {
+    this.closestStationsIds.forEach(pointId => {
+      removeMarker(this.markers[pointId]);
     });
   }
 
@@ -54,7 +54,7 @@ export default class StationsMap extends Component {
   }
 
   removeOldCurrentPosition() {
-    removeMapLayer(this.currentPositionMarker);
+    removeMarker(this.currentPositionMarker);
   }
 
   componentDidMount() {
@@ -65,21 +65,21 @@ export default class StationsMap extends Component {
     );
     this.showCurrentPosition();
 
-    getStationsPromise().then(points => {
-      this.points = points;
-      this.addClosestPoints();
+    getStationsPromise().then(stations => {
+      this.allStations = stations;
+      this.addClosestStations();
     });
   }
 
   componentWillUpdate() {
-    this.removeOldClosestPoints();
+    this.removeOldClosestStations();
     this.removeOldCurrentPosition();
   }
 
   componentDidUpdate() {
     mapPanTo(this.mapInstance, this.props.currentPosition);
     this.showCurrentPosition();
-    this.addClosestPoints();
+    this.addClosestStations();
   }
 
   render() {
