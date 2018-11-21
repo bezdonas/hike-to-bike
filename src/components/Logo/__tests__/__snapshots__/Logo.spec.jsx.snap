@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo renders as expected and matches snapshot 1`] = `
+<h1
+  class="logo-block"
+>
+  Hike to a bike
+</h1>
+`;

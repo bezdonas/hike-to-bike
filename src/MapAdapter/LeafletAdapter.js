@@ -3,11 +3,20 @@ import './leaflet.css';
 
 export const initMap = (className, coords, zoom) => {
   const mapInstance = Leaflet.map(className).setView(coords, zoom);
-
-  Leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(mapInstance);
+  const mapBoxToken =
+    'pk.eyJ1IjoiYmV6ZG9uYXMiLCJhIjoiY2o3YWMxNmllMGRuOTM4bjB3MmVzYjNxdiJ9.MwmKortGU2xNM6LM4kTpjg';
+  Leaflet.tileLayer(
+    'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
+    {
+      attribution: `Map data &copy; <a href="https://www.openstreetmap.org/">
+                    OpenStreetMap</a> contributors, 
+                    <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,
+                    Imagery © <a href="https://www.mapbox.com/">Mapbox</a>`,
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: mapBoxToken,
+    }
+  ).addTo(mapInstance);
 
   return mapInstance;
 };

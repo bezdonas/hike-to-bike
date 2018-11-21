@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searchbar renders as expected and matches snapshot 1`] = `
+<div
+  class="searchbar"
+>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+  >
+    <input
+      aria-autocomplete="list"
+      aria-expanded={false}
+      autoComplete="off"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      oninput={[Function]}
+      placeholder="Where are you?"
+      ref={[Function]}
+      role="combobox"
+      value=""
+    />
+  </div>
+</div>
+`;

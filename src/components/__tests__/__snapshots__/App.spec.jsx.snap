@@ -4,6 +4,41 @@ exports[`App smoke renders and matches snapshot 1`] = `
 <div
   id="app"
 >
+  <aside
+    class="sidebar"
+  >
+    <h1
+      class="logo-block"
+    >
+      Hike to a bike
+    </h1>
+    <div
+      class="searchbar"
+    >
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <input
+          aria-autocomplete="list"
+          aria-expanded={false}
+          autoComplete="off"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          oninput={[Function]}
+          placeholder="Where are you?"
+          ref={[Function]}
+          role="combobox"
+          value=""
+        />
+      </div>
+    </div>
+  </aside>
   <div
     class="stations-map"
     id="stations-map"

@@ -1,0 +1,22 @@
+.searchbar {
+  text-align: left;
+}
+.searchbar input {
+  line-height: 25px;
+  font-size: 20px;
+  width: 240px;
+  box-sizing: border-box;
+}
+.searchbar .autocomplete-proposition {
+  padding: 4px;
+  width: 240px;
+  text-overflow: ellipsis;
+  height: 22px;
+  overflow: hidden;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.searchbar .autocomplete-proposition.selected {
+  background: rgba(0, 0, 0, 0.15);
+}
