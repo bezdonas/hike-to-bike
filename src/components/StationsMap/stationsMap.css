@@ -2,3 +2,9 @@
   z-index: 90;
   height: 100vh;
 }
+
+@media (max-width: 650px) {
+  .stations-map {
+    height: 75vh;
+  }
+}
