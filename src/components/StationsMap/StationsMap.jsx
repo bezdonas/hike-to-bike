@@ -14,16 +14,22 @@ import {
 import './stationsMap.css';
 
 const defaultZoom = 15;
+const stationsUpdateIntervalDuration = 10000;
 
 // StationsMapProps = { currentPosition: [lat, lng], showAllStations: boolean }
 export default class StationsMap extends Component {
   constructor(props) {
     super(props);
+
+    this.updateStationsInterval;
+
     this.mapInstance;
+
     this.currentPositionMarker;
     this.markers = {
       // stationId: LeafletMarker
     };
+
     this.allStations = [];
     this.closestStations = [];
   }
@@ -63,6 +69,14 @@ export default class StationsMap extends Component {
     removeMarker(this.currentPositionMarker);
   }
 
+  getStations() {
+    getStationsPromise().then(stations => {
+      this.removeOldClosestStations();
+      this.allStations = stations;
+      this.addClosestStations();
+    });
+  }
+
   componentDidMount() {
     this.mapInstance = initMap(
       'stations-map',
@@ -71,10 +85,11 @@ export default class StationsMap extends Component {
     );
     this.showCurrentPosition();
 
-    getStationsPromise().then(stations => {
-      this.allStations = stations;
-      this.addClosestStations();
-    });
+    this.getStations();
+    this.updateStationsInfoInterval = setInterval(
+      this.getStations.bind(this),
+      stationsUpdateIntervalDuration
+    );
   }
 
   componentWillUpdate() {
@@ -86,6 +101,10 @@ export default class StationsMap extends Component {
     mapPanTo(this.mapInstance, this.props.currentPosition);
     this.showCurrentPosition();
     this.addClosestStations();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.updateStationsInfoInterval);
   }
 
   render() {
