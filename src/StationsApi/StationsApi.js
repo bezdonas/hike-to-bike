@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { distanceBetweenTwoStations } from '../MapAdapter/LeafletAdapter.js';
-import { get, forEach } from 'lodash';
+import get from 'lodash/get';
+import forEach from 'lodash/forEach';
 
 const endpoint = 'https://www.rideindego.com/stations/json/';
 
@@ -20,7 +21,7 @@ export const getStationsPromise = () => {
   });
 };
 
-// indego API's coords are flipped ([lng, lat], instead of [lat,lng])
+// indego API's coords are flipped in relation to leaflet
 export const flipCoords = coords => [coords[1], coords[0]];
 
 // look RawStations.js and ParsedStations.js in ../__mocks__/ for example of input -> output

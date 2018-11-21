@@ -10,7 +10,7 @@ import {
   getStationsPromise,
   parseStations,
   getClosestStations,
-} from '../../API/StationsApi.js';
+} from '../../StationsApi/StationsApi.js';
 import './stationsMap.css';
 
 const defaultZoom = 15;
@@ -21,7 +21,9 @@ export default class StationsMap extends Component {
     super(props);
     this.mapInstance;
     this.currentPositionMarker;
-    this.markers = {};
+    this.markers = {
+      // stationId: LeafletMarker
+    };
     this.allStations = [];
     this.closestStations = [];
   }

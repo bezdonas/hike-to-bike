@@ -16,7 +16,7 @@ export default class App extends Component {
   }
   handleChangePosition(newPosition) {
     this.setState({
-      currentPosition: newPosition.split(','),
+      currentPosition: newPosition,
     });
   }
   render(props, state) {
