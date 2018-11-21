@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { distanceBetweenTwoStations } from '../MapAdapter/LeafletAdapter.js';
 import get from 'lodash/get';
+import map from 'lodash/map';
 import forEach from 'lodash/forEach';
 
 const endpoint = 'https://www.rideindego.com/stations/json/';
@@ -26,21 +27,20 @@ export const flipCoords = coords => [coords[1], coords[0]];
 
 // look RawStations.js and ParsedStations.js in ../__mocks__/ for example of input -> output
 export const parseStations = rawStations => {
+  const maxBikesPerStation = 30;
   const parsedStations = [];
   rawStations.forEach(rawPoint => {
     const { geometry, properties } = rawPoint;
+    if (properties.bikesAvailable === 0) {
+      return;
+    }
     parsedStations.push({
       id: properties.kioskId,
       coordinates: flipCoords(geometry.coordinates),
       name: properties.addressStreet,
-      address: properties.addressStreet,
-      bikes: properties.bikesAvailable,
-      classicBikes: properties.classicBikesAvailable,
-      smartBikes: properties.smartBikesAvailable,
-      electricBikes: properties.electricBikesAvailable,
+      totalBikes: properties.bikesAvailable,
+      fillPercentage: properties.bikesAvailable / maxBikesPerStation,
       docks: properties.docksAvailable,
-      closeTime: properties.closeTime,
-      openTime: properties.openTime,
     });
   });
   return parsedStations;
@@ -53,9 +53,8 @@ export const getClosestStations = (coords, stations, quantity = 3) => {
   stations.forEach(station => {
     const proximity = distanceBetweenTwoStations(coords, station.coordinates);
     stationProximityAndId.push({
-      id: station.id,
-      coordinates: station.coordinates,
       proximity,
+      ...station,
     });
   });
 

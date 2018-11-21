@@ -1,15 +1,22 @@
 .searchbar {
   text-align: left;
+  width: 100%;
+}
+.autocomplete-wrapper {
+  display: block !important;
 }
 .searchbar input {
   line-height: 25px;
   font-size: 20px;
-  width: 240px;
+  min-width: 240px;
+  padding: 5px;
+  width: 100%;
   box-sizing: border-box;
 }
 .searchbar .autocomplete-proposition {
   padding: 4px;
-  width: 240px;
+  min-width: 240px;
+  width: 100%;
   text-overflow: ellipsis;
   height: 22px;
   overflow: hidden;
@@ -20,3 +27,9 @@
 .searchbar .autocomplete-proposition.selected {
   background: rgba(0, 0, 0, 0.15);
 }
+
+/* @media (max-width: 700px) {
+  .searchbar input .searchbar .autocomplete-proposition {
+    width: 100%;
+  }
+} */

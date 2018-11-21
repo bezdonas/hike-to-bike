@@ -1,0 +1,19 @@
+.legend-block {
+  text-align: left;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.legend-block .leaflet-marker-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: static;
+  width: 25px;
+  height: 41px;
+}
+
+.legend-block .note {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+}

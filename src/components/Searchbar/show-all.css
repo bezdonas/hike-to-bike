@@ -1,0 +1,11 @@
+.show-all-wrapper {
+  margin-top: 10px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+}
+
+.show-all-wrapper input {
+  display: inline-block;
+  vertical-align: middle;
+}

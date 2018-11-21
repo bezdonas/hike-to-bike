@@ -1,6 +1,13 @@
 import Leaflet, { latLng } from 'leaflet';
 import './leaflet.css';
 
+export const positionMarker = Leaflet.divIcon({
+  className: 'current-position-icon',
+});
+export const stationMarker = Leaflet.divIcon({
+  className: 'indego-station-icon',
+});
+
 export const initMap = (className, coords, zoom) => {
   const mapInstance = Leaflet.map(className).setView(coords, zoom);
   const mapBoxToken =
@@ -9,9 +16,9 @@ export const initMap = (className, coords, zoom) => {
     'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
     {
       attribution: `Map data &copy; <a href="https://www.openstreetmap.org/">
-                    OpenStreetMap</a> contributors, 
-                    <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,
-                    Imagery © <a href="https://www.mapbox.com/">Mapbox</a>`,
+OpenStreetMap</a> contributors, 
+<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,
+Imagery © <a href="https://www.mapbox.com/">Mapbox</a>`,
       maxZoom: 18,
       id: 'mapbox.streets',
       accessToken: mapBoxToken,
@@ -31,9 +38,22 @@ export const addMarkerToMap = (mapInstance, latLng, markerOptions) => {
   return marker;
 };
 
+export const addStationToMap = (mapInstance, station) => {
+  const markerOpacity = station.fillPercentage / 2 + 0.5; // 0 -- 1 -> 0.5 -- 1
+  const marker = addMarkerToMap(mapInstance, station.coordinates, {
+    opacity: markerOpacity,
+  });
+  marker.bindPopup(
+    `<h4>${station.name}</h4>
+    <b>Bikes:</b> ${station.totalBikes}<br>
+    <b>Docks:</b> ${station.docks}`
+  );
+  return marker;
+};
+
 export const addCurrentPosToMap = (mapInstance, latLng) => {
   return addMarkerToMap(mapInstance, latLng, {
-    icon: Leaflet.divIcon({ className: 'current-position-icon' }),
+    icon: positionMarker,
   });
 };
 
