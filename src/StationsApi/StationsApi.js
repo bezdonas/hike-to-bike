@@ -17,7 +17,7 @@ export const getStationsPromise = () => {
         alert(`Indego's API doesn't work :(
                Look into console for details`);
         console.error(error);
-        reject();
+        reject(error);
       });
   });
 };
