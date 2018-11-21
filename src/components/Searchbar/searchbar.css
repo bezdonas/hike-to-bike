@@ -27,9 +27,3 @@
 .searchbar .autocomplete-proposition.selected {
   background: rgba(0, 0, 0, 0.15);
 }
-
-/* @media (max-width: 700px) {
-  .searchbar input .searchbar .autocomplete-proposition {
-    width: 100%;
-  }
-} */

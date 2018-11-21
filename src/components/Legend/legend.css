@@ -17,3 +17,13 @@
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
 }
+
+@media (max-width: 700px) {
+  .legend-block {
+    position: fixed;
+    background: rgba(250, 250, 250, 0.4);
+  }
+  .legend-block h3 {
+    display: none;
+  }
+}
