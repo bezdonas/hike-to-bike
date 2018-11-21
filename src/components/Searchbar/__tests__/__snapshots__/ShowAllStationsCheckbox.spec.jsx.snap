@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowAllStationsCheckbox renders as expected and matches snapshot 1`] = `
+<div
+  class="show-all-wrapper"
+>
+  <label>
+    Show all stations 
+    <input
+      onClick={[Function]}
+      type="checkbox"
+      value={true}
+    />
+  </label>
+</div>
+`;

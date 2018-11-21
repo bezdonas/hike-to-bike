@@ -3,7 +3,7 @@ import {
   initMap,
   mapPanTo,
   removeMarker,
-  addMarkerToMap,
+  addStationToMap,
   addCurrentPosToMap,
 } from '../../MapAdapter/LeafletAdapter.js';
 import {
@@ -15,7 +15,7 @@ import './stationsMap.css';
 
 const defaultZoom = 15;
 
-// StationsMapProps = { currentPosition: [lat, lng] }
+// StationsMapProps = { currentPosition: [lat, lng], showAllStations: boolean }
 export default class StationsMap extends Component {
   constructor(props) {
     super(props);
@@ -33,16 +33,21 @@ export default class StationsMap extends Component {
       this.props.currentPosition,
       this.allStations
     );
-    this.closestStations.forEach(station => {
-      this.markers[station.id] = addMarkerToMap(
-        this.mapInstance,
-        station.coordinates
-      );
+
+    const stationsToShow = this.props.showAllStations
+      ? this.allStations
+      : this.closestStations;
+
+    stationsToShow.forEach(station => {
+      this.markers[station.id] = addStationToMap(this.mapInstance, station);
     });
   }
 
   removeOldClosestStations() {
-    this.closestStations.forEach(station => {
+    const stationsToRemove = this.props.showAllStations
+      ? this.allStations
+      : this.closestStations;
+    stationsToRemove.forEach(station => {
       removeMarker(this.markers[station.id]);
     });
   }

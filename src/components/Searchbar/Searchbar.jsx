@@ -38,7 +38,9 @@ export default class Searchbar extends Component {
     this.setState({
       searchQuery,
     });
-    this.debouncedGeocodeAddress();
+    if (searchQuery) {
+      this.debouncedGeocodeAddress();
+    }
   }
 
   onQuerySubmit(val, item) {
@@ -54,10 +56,11 @@ export default class Searchbar extends Component {
   }
 
   render(props) {
-    const { searchQuery, searchSuggestions } = this.state;
+    const { searchQuery, searchSuggestions, showAllStations } = this.state;
     return (
       <div className="searchbar">
         <Autocomplete
+          wrapperProps={{ className: 'autocomplete-wrapper' }}
           inputProps={{ placeholder: 'Where are you?' }}
           getItemValue={item => item.place_name}
           items={searchSuggestions}

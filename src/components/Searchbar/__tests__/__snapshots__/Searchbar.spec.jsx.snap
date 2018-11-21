@@ -5,6 +5,7 @@ exports[`Searchbar renders as expected and matches snapshot 1`] = `
   class="searchbar"
 >
   <div
+    class="autocomplete-wrapper"
     style={
       Object {
         "display": "inline-block",
