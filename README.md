@@ -27,8 +27,9 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 # CI/CD
 
 - Travis runs build and test in docker-container
-- Then compiled build-folder is moved to heroku
-- Heroku deploys static build
+- If branch is master, compiled build-folder is moved to heroku
+- Heroku serves static bundle in `./build`
+- Travis cleans up docker's stuff
 
 # Technologies
 
@@ -39,3 +40,4 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 - [eslint](https://eslint.org)
 - [docker](https://www.docker.com/)
 - [preact](https://preactjs.com/)
+- [leaflet](https://leafletjs.com)

@@ -25,10 +25,11 @@ export const flipCoords = coords => [coords[1], coords[0]];
 
 // look RawStations.js and ParsedStations.js in ../__mocks__/ for example of input -> output
 export const parseStations = rawStations => {
-  const parsedStations = {};
+  const parsedStations = [];
   rawStations.forEach(rawPoint => {
     const { geometry, properties } = rawPoint;
-    parsedStations[properties.kioskId] = {
+    parsedStations.push({
+      id: properties.kioskId,
       coordinates: flipCoords(geometry.coordinates),
       name: properties.addressStreet,
       address: properties.addressStreet,
@@ -39,7 +40,7 @@ export const parseStations = rawStations => {
       docks: properties.docksAvailable,
       closeTime: properties.closeTime,
       openTime: properties.openTime,
-    };
+    });
   });
   return parsedStations;
 };
@@ -48,11 +49,11 @@ export const parseStations = rawStations => {
 // returns the ${quanitity} of closest stations
 export const getClosestStations = (coords, stations, quantity = 3) => {
   const stationProximityAndId = [];
-  forEach(stations, (station, stationId) => {
+  stations.forEach(station => {
     const proximity = distanceBetweenTwoStations(coords, station.coordinates);
     stationProximityAndId.push({
-      ...station,
-      id: parseInt(stationId),
+      id: station.id,
+      coordinates: station.coordinates,
       proximity,
     });
   });

@@ -22,7 +22,7 @@ export default class StationsMap extends Component {
     this.mapInstance;
     this.currentPositionMarker;
     this.markers = {};
-    this.allStations = []; // revert to array
+    this.allStations = [];
     this.closestStations = [];
   }
 
