@@ -39,3 +39,5 @@ Simple app for finding closest [indego](https://www.rideindego.com/) bycicle sta
 - [eslint](https://eslint.org)
 - [docker](https://www.docker.com/)
 - [preact](https://preactjs.com/)
+- [Leaflet](https://leafletjs.com)
+- [Mapbox](https://mapbox.com/)
