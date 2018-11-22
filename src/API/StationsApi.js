@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { distanceBetweenTwoStations } from '../MapAdapter/LeafletAdapter.js';
-import { get, forEach } from 'lodash';
+import get from 'lodash/get';
+import forEach from 'lodash/forEach';
 
 const endpoint = 'https://www.rideindego.com/stations/json/';
 
