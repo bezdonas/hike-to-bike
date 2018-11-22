@@ -4,6 +4,76 @@ exports[`App smoke renders and matches snapshot 1`] = `
 <div
   id="app"
 >
+  <aside
+    class="sidebar"
+  >
+    <h1
+      class="logo-block"
+    >
+      Hike to a bike
+    </h1>
+    <div
+      class="searchbar"
+    >
+      <[object Object]
+        getItemValue={[Function]}
+        inputProps={
+          Object {
+            "placeholder": "Where are you?",
+          }
+        }
+        items={Array []}
+        onChange={[Function]}
+        onSelect={[Function]}
+        renderItem={[Function]}
+        value=""
+        wrapperProps={
+          Object {
+            "className": "autocomplete-wrapper",
+          }
+        }
+      />
+    </div>
+    <div
+      class="show-all-wrapper"
+    >
+      <label>
+        Show all stations 
+        <input
+          onClick={[Function]}
+          type="checkbox"
+          value={false}
+        />
+      </label>
+    </div>
+    <div
+      class="legend-block"
+    >
+      <h3>
+        Legend
+      </h3>
+      <p>
+        <img
+          class="leaflet-marker-icon"
+          src="https://unpkg.com/leaflet@1.3.4/dist/images/marker-icon-2x.png"
+        />
+         — Healthy station
+      </p>
+      <p>
+        <img
+          class="leaflet-marker-icon"
+          src="https://unpkg.com/leaflet@1.3.4/dist/images/marker-icon-2x.png"
+          style="opacity: 0.5"
+        />
+         — Near-empty station
+      </p>
+      <span
+        class="note"
+      >
+        Markers are clickable for details
+      </span>
+    </div>
+  </aside>
   <div
     class="stations-map"
     id="stations-map"

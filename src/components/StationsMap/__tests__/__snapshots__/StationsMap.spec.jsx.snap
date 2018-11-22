@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StationsMap renders as expected and matches snapshot with showAllStations 1`] = `
+<div
+  class="stations-map"
+  id="stations-map"
+/>
+`;
+
+exports[`StationsMap renders as expected and matches snapshot without showAllStations 1`] = `
+<div
+  class="stations-map"
+  id="stations-map"
+/>
+`;

@@ -6,5 +6,6 @@ module.exports = {
   moduleDirectories: ['.', 'src', 'node_modules'],
   moduleNameMapper: {
     '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
+    '^react': 'preact-compat',
   },
 };

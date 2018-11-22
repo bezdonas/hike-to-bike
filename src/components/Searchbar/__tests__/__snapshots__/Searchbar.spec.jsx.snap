@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searchbar renders as expected and matches snapshot 1`] = `
+<div
+  class="searchbar"
+>
+  <[object Object]
+    getItemValue={[Function]}
+    inputProps={
+      Object {
+        "placeholder": "Where are you?",
+      }
+    }
+    items={Array []}
+    onChange={[Function]}
+    onSelect={[Function]}
+    renderItem={[Function]}
+    value=""
+    wrapperProps={
+      Object {
+        "className": "autocomplete-wrapper",
+      }
+    }
+  />
+</div>
+`;

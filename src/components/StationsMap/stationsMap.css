@@ -1,4 +1,10 @@
 .stations-map {
-  width: 100%;
+  z-index: 90;
   height: 100vh;
+}
+
+@media (max-width: 700px) {
+  .stations-map {
+    height: 80vh;
+  }
 }

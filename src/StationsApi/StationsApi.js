@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { distanceBetweenTwoStations } from '../MapAdapter/LeafletAdapter.js';
-import { get, forEach } from 'lodash';
+import get from 'lodash/get';
+import map from 'lodash/map';
+import forEach from 'lodash/forEach';
 
 const endpoint = 'https://www.rideindego.com/stations/json/';
 
@@ -15,31 +17,31 @@ export const getStationsPromise = () => {
         alert(`Indego's API doesn't work :(
                Look into console for details`);
         console.error(error);
-        reject();
+        reject(error);
       });
   });
 };
 
-// indego API's coords are flipped ([lng, lat], instead of [lat,lng])
+// indego API's coords are flipped in relation to leaflet
 export const flipCoords = coords => [coords[1], coords[0]];
 
 // look RawStations.js and ParsedStations.js in ../__mocks__/ for example of input -> output
 export const parseStations = rawStations => {
-  const parsedStations = {};
+  const maxBikesPerStation = 30;
+  const parsedStations = [];
   rawStations.forEach(rawPoint => {
     const { geometry, properties } = rawPoint;
-    parsedStations[properties.kioskId] = {
-      coordinates: flipCoords(geometry.coordinates),
-      name: properties.addressStreet,
-      address: properties.addressStreet,
-      bikes: properties.bikesAvailable,
-      classicBikes: properties.classicBikesAvailable,
-      smartBikes: properties.smartBikesAvailable,
-      electricBikes: properties.electricBikesAvailable,
-      docks: properties.docksAvailable,
-      closeTime: properties.closeTime,
-      openTime: properties.openTime,
-    };
+    if (properties.bikesAvailable === 0) {
+      return;
+    }
+    parsedStations.push({
+      id: get(properties, 'kioskId'),
+      coordinates: flipCoords(get(geometry, 'coordinates')),
+      name: get(properties, 'addressStreet'),
+      totalBikes: get(properties, 'bikesAvailable'),
+      fillPercentage: get(properties, 'bikesAvailable') / maxBikesPerStation,
+      docks: get(properties, 'docksAvailable'),
+    });
   });
   return parsedStations;
 };
@@ -48,12 +50,11 @@ export const parseStations = rawStations => {
 // returns the ${quanitity} of closest stations
 export const getClosestStations = (coords, stations, quantity = 3) => {
   const stationProximityAndId = [];
-  forEach(stations, (station, stationId) => {
+  stations.forEach(station => {
     const proximity = distanceBetweenTwoStations(coords, station.coordinates);
     stationProximityAndId.push({
-      ...station,
-      id: parseInt(stationId),
       proximity,
+      ...station,
     });
   });
 
