@@ -4,7 +4,7 @@ import get from 'lodash/get';
 import map from 'lodash/map';
 import forEach from 'lodash/forEach';
 
-const endpoint = 'https://www.rideindego.com/stations/json/';
+const endpoint = 'https://kiosks.bicycletransit.workers.dev/phl';
 
 export const getStationsPromise = () => {
   return new Promise((resolve, reject) => {
