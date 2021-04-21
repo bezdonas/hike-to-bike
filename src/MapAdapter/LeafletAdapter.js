@@ -8,10 +8,10 @@ export const positionMarker = Leaflet.divIcon({
 export const initMap = (className, coords, zoom) => {
   const mapInstance = Leaflet.map(className).setView(coords, zoom);
   const mapBoxToken =
-    'pk.eyJ1IjoiYmV6ZG9uYXMiLCJhIjoiY2o3YWMxNmllMGRuOTM4bjB3MmVzYjNxdiJ9.MwmKortGU2xNM6LM4kTpjg';
+    'pk.eyJ1IjoiYmV6ZG9uYXMiLCJhIjoiY2tucmQ4cnN1MG5uejJucXdvb2J2b2o2dSJ9.pwHaMSlWgLr9zQAZzTb3Pw';
 
   Leaflet.tileLayer(
-    'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
+    'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}',
     {
       attribution: `Map data &copy; <a href="https://www.openstreetmap.org/">
 OpenStreetMap</a> contributors, 
